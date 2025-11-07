@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import TeamMemberCard from '@/components/TeamMemberCard';
 import Image from 'next/image';
 
 export default function Home() {
@@ -309,25 +310,18 @@ export default function Home() {
               </div>
               <div className="row">
                 {[
-                  { img: 1, name: 'Musaver', role: 'CEO' },
-                  { img: 2, name: 'Noor Fatima', role: 'UI/UX Designer' },
-                  { img: 3, name: 'Rehan', role: 'App Developer' },
-                  { img: 4, name: 'Amrina', role: 'Web Developer' }
+                  { img: 'musaver.jpg', name: 'Musaver', role: 'CEO & Founder' },
+                  { img: 'hassan.jpg', name: 'Hassan', role: 'Business Developer & Marketing Manager' },
+                  { img: 'rehan.jpeg', name: 'Rehan', role: 'Project Manager' },
+                  { img: 'uzair.png', name: 'Uzair', role: 'Full Stack Developer' }
                 ].map((member, idx) => (
-                  <div key={idx} className="col-sm-6 col-lg-3 mb-11 mb-lg-0">
-                    <div className="team d-flex flex-column align-items-center gap-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}
-                      data-aos-duration="1000">
-                      <div className="team-img">
-                        <Image src={`/assets/images/team/team-img-${member.img}.png`} alt="team" className="img-fluid" width={300} height={300} />
-                      </div>
-                      <div className="team-details text-center d-flex flex-column gap-3">
-                        <div className="d-flex flex-column gap-1">
-                          <h6 className="mb-0">{member.name}</h6>
-                          <p className="mb-0">{member.role}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamMemberCard 
+                    key={idx}
+                    img={member.img}
+                    name={member.name}
+                    role={member.role}
+                    idx={idx}
+                  />
                 ))}
               </div>
             </div>
@@ -429,7 +423,7 @@ export default function Home() {
                           <div className="d-flex flex-column gap-5">
                             <div className="d-flex flex-column gap-7">
                               <span className="badge text-bg-dark fs-4 w-fit">Starter</span>
-                              <p className="mb-0 text-muted">For companies who need design support. One request at a time</p>
+                              <p className="mb-0 text-muted">Perfect for startups needing a basic web application with essential features</p>
                             </div>
                             <div className="d-flex flex-column gap-7">
                               <h2 className="mb-0">$2500</h2>
@@ -445,7 +439,7 @@ export default function Home() {
                           <div className="d-flex flex-column gap-3 ps-lg-7">
                             <h6 className="mb-0">Features</h6>
                             <ul className="list-unstyled mb-0 d-flex flex-column gap-3">
-                              {['Design Updates Every 2 Days', 'Mid-level Designer', 'SEO optimization', 'Monthly analytics', '2x Calls Per Month', 'License free assets'].map((feature, idx) => (
+                              {['Basic Web Application', 'Responsive Design', 'User Authentication', 'Database Integration', 'SEO Optimization', 'Admin Dashboard', 'Up to 10 Pages/Screens', '2x Calls Per Month', 'Monthly Analytics', '30 Days Support'].map((feature, idx) => (
                                 <li key={idx} className="hstack gap-7">
                                   <iconify-icon icon="lucide:check" className="fs-6 text-dark"></iconify-icon>
                                   <p className="mb-0 text-dark">{feature}</p>
@@ -466,7 +460,7 @@ export default function Home() {
                           <div className="d-flex flex-column gap-5">
                             <div className="d-flex flex-column gap-7">
                               <span className="badge text-bg-dark fs-4 w-fit">Pro</span>
-                              <p className="mb-0 text-white">2x the speed. Great for an MVP, Web App or complex problem</p>
+                              <p className="mb-0 text-white">Complete solution with Mobile App + Web App for scaling businesses</p>
                             </div>
                             <div className="d-flex flex-column gap-7">
                               <h2 className="mb-0 text-white">$5000+</h2>
@@ -482,7 +476,7 @@ export default function Home() {
                           <div className="d-flex flex-column gap-3 ps-lg-7">
                             <h6 className="mb-0 text-white">Features</h6>
                             <ul className="list-unstyled mb-0 d-flex flex-column gap-3">
-                              {['Design Updates Daily', 'Senior-level Designer', 'AI Advisory Framework', 'Full-service Creative Team', '4x Calls Per Month', 'License free assets'].map((feature, idx) => (
+                              {['Mobile App (iOS & Android)', 'Advanced Web Application', 'Real-time Features', 'Push Notifications', 'Payment Gateway Integration', 'Advanced Admin Panel', 'API Development', 'Cloud Deployment', 'Unlimited Pages/Screens', '90 Days Maintenance'].map((feature, idx) => (
                                 <li key={idx} className="hstack gap-7">
                                   <iconify-icon icon="lucide:check" className="fs-6 text-white"></iconify-icon>
                                   <p className="mb-0 text-white">{feature}</p>
