@@ -25,7 +25,7 @@ export default function Home() {
               </div>
               <div className="d-md-flex align-items-center justify-content-center gap-10" data-aos="fade-up"
                 data-aos-delay="300" data-aos-duration="1000">
-                <a href="/contact" className="btn btn-primary py-md-8 pe-md-14 mx-auto mx-md-0 d-block d-md-flex">
+                <a href="/contact" className="btn btn-primary py-md-7 pe-md-14 mx-auto mx-md-0 d-block d-md-flex">
                   <span className="btn-text">Get Started</span>
                   <iconify-icon icon="solar:arrow-right-up-linear"
                     className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
