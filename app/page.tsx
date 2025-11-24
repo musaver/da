@@ -310,8 +310,8 @@ export default function Home() {
               </div>
               <div className="row">
                 {[
-                  { img: 'musaver.jpg', name: 'Musaver', role: 'CEO & Founder' },
-                  { img: 'hassan.jpg', name: 'Hassan', role: 'Business Developer & Marketing Manager' },
+                  { img: 'musaver.jpg', name: 'Musaver', role: 'CEO & Co-Founder' },
+                  { img: 'hassan.jpg', name: 'Hassan', role: 'Business Developer & Co-Founder' },
                   { img: 'rehan.jpeg', name: 'Rehan', role: 'Project Manager' },
                   { img: 'uzair.png', name: 'Uzair', role: 'Full Stack Developer' }
                 ].map((member, idx) => (
