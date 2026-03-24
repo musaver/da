@@ -1,27 +1,18 @@
 'use client';
 
-import { useEffect } from 'react';
-import Script from 'next/script';
+import { useEffect, useRef } from 'react';
 
 export default function SignupWidget() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const handler = (cdEvent: Event) => {
-      const { step } = (cdEvent as CustomEvent<{ step: string }>).detail;
-      if (step === 'ConfirmationStep') {
-        console.log('Signup Completed');
-      }
-    };
+    const container = containerRef.current;
+    if (!container) return;
 
-    document.addEventListener('cd-signup-next-step', handler);
-    return () => {
-      document.removeEventListener('cd-signup-next-step', handler);
-    };
-  }, []);
-
-  return (
-    <>
-      <div id="cd-progress-widget" />
-      <div id="cd-memberplans-widget" />
+    // Inject widget HTML outside React's virtual DOM control
+    container.innerHTML = `
+      <div id="cd-progress-widget"></div>
+      <div id="cd-memberplans-widget"></div>
       <input type="hidden" name="PID" value="57365" />
       <div
         id="cd-signup-widget"
@@ -29,12 +20,29 @@ export default function SignupWidget() {
         data-memberurl="https://www.smartcredit.com"
         data-productname="smartcredit"
         data-switcher
-      />
-      <Script
-        src="https://cdn.consumerdirect.io/cd-widgets/latest/cd-signup.js"
-        type="module"
-        strategy="afterInteractive"
-      />
-    </>
-  );
+      ></div>
+    `;
+
+    // Load the widget script
+    const script = document.createElement('script');
+    script.src = 'https://cdn.consumerdirect.io/cd-widgets/latest/cd-signup.js';
+    script.type = 'module';
+    script.async = true;
+    container.appendChild(script);
+
+    // Listen for signup completion
+    const handler = (cdEvent: Event) => {
+      const { step } = (cdEvent as CustomEvent<{ step: string }>).detail;
+      if (step === 'ConfirmationStep') {
+        console.log('Signup Completed');
+      }
+    };
+    document.addEventListener('cd-signup-next-step', handler);
+
+    return () => {
+      document.removeEventListener('cd-signup-next-step', handler);
+    };
+  }, []);
+
+  return <div ref={containerRef} />;
 }
