@@ -76,7 +76,7 @@ export async function POST(req: NextRequest, { params }: Params) {
 
     return NextResponse.json(result);
   } catch (err: any) {
-    console.error('[signup API]', err);
+    console.error('[signup API POST]', { action: (await params).action, message: err.message });
     return NextResponse.json(
       { error: err.message || 'Internal error' },
       { status: 500 },
@@ -115,7 +115,7 @@ export async function GET(req: NextRequest, { params }: Params) {
 
     return NextResponse.json(result);
   } catch (err: any) {
-    console.error('[signup API]', err);
+    console.error('[signup API GET]', { action: (await params).action, message: err.message });
     return NextResponse.json(
       { error: err.message || 'Internal error' },
       { status: 500 },

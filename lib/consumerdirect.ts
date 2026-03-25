@@ -27,25 +27,26 @@ async function cdFetch(path: string, opts: ApiOptions = {}) {
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
+    'Authorization': `Bearer ${CLIENT_KEY}`,
   };
 
-  // clientKey, trackingToken, customerToken are passed as parameters (body or query)
-  const authParams: Record<string, string> = { clientKey: CLIENT_KEY };
-  if (trackingToken) authParams.trackingToken = trackingToken;
-  if (customerToken) authParams.customerToken = customerToken;
+  // trackingToken and customerToken passed as body/query params
+  const contextParams: Record<string, string> = {};
+  if (trackingToken) contextParams.trackingToken = trackingToken;
+  if (customerToken) contextParams.customerToken = customerToken;
 
   let url = `${BASE_URL}${path}`;
 
   if (method === 'GET') {
-    const qs = new URLSearchParams({ ...authParams } as Record<string, string>).toString();
-    url = `${url}?${qs}`;
+    const qs = new URLSearchParams(contextParams).toString();
+    if (qs) url = `${url}?${qs}`;
   }
 
   const res = await fetch(url, {
     method,
     headers,
     ...(method !== 'GET'
-      ? { body: JSON.stringify({ ...authParams, ...body }) }
+      ? { body: JSON.stringify({ ...contextParams, ...body }) }
       : {}),
   });
 
