@@ -1,0 +1,24 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "claude/add-empty-page-template-5DjEC",
+    "claude/remove-islam-project-xyaTq",
+    "claude/seo-optimization-tests-qeHfA",
+    "main",
+    "vercel/react-server-components-cve-vu-chi6ko"
+  ],
+  "parent": {
+    "claude/add-empty-page-template-5DjEC": "main",
+    "claude/remove-islam-project-xyaTq": "main",
+    "claude/seo-optimization-tests-qeHfA": "main",
+    "main": null,
+    "vercel/react-server-components-cve-vu-chi6ko": "main"
+  },
+  "order": [
+    "main",
+    "claude/add-empty-page-template-5DjEC",
+    "claude/remove-islam-project-xyaTq",
+    "claude/seo-optimization-tests-qeHfA",
+    "vercel/react-server-components-cve-vu-chi6ko"
+  ]
+}
