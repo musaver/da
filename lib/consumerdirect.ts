@@ -27,15 +27,26 @@ async function cdFetch(path: string, opts: ApiOptions = {}) {
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
-    'x-cd-clientkey': CLIENT_KEY,
   };
-  if (trackingToken) headers['x-cd-trackingtoken'] = trackingToken;
-  if (customerToken) headers['x-cd-customertoken'] = customerToken;
 
-  const res = await fetch(`${BASE_URL}${path}`, {
+  // clientKey, trackingToken, customerToken are passed as parameters (body or query)
+  const authParams: Record<string, string> = { clientKey: CLIENT_KEY };
+  if (trackingToken) authParams.trackingToken = trackingToken;
+  if (customerToken) authParams.customerToken = customerToken;
+
+  let url = `${BASE_URL}${path}`;
+
+  if (method === 'GET') {
+    const qs = new URLSearchParams({ ...authParams } as Record<string, string>).toString();
+    url = `${url}?${qs}`;
+  }
+
+  const res = await fetch(url, {
     method,
     headers,
-    ...(body && method !== 'GET' ? { body: JSON.stringify(body) } : {}),
+    ...(method !== 'GET'
+      ? { body: JSON.stringify({ ...authParams, ...body }) }
+      : {}),
   });
 
   const data = await res.json().catch(() => null);
