@@ -27,33 +27,47 @@ async function cdFetch(path: string, opts: ApiOptions = {}) {
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${CLIENT_KEY}`,
+    // Try all common auth header variants simultaneously
+    'x-api-key': CLIENT_KEY,
+    'x-clientkey': CLIENT_KEY,
+    'x-cd-clientkey': CLIENT_KEY,
   };
 
-  // trackingToken and customerToken passed as body/query params
-  const contextParams: Record<string, string> = {};
-  if (trackingToken) contextParams.trackingToken = trackingToken;
-  if (customerToken) contextParams.customerToken = customerToken;
+  // Also send clientKey in body/query as some SAPI calls expect it there
+  const authParams: Record<string, string> = { clientKey: CLIENT_KEY };
+  if (trackingToken) authParams.trackingToken = trackingToken;
+  if (customerToken) authParams.customerToken = customerToken;
 
   let url = `${BASE_URL}${path}`;
 
   if (method === 'GET') {
-    const qs = new URLSearchParams(contextParams).toString();
-    if (qs) url = `${url}?${qs}`;
+    const qs = new URLSearchParams(authParams).toString();
+    url = `${url}?${qs}`;
   }
 
   const res = await fetch(url, {
     method,
     headers,
     ...(method !== 'GET'
-      ? { body: JSON.stringify({ ...contextParams, ...body }) }
+      ? { body: JSON.stringify({ ...authParams, ...body }) }
       : {}),
   });
 
   const data = await res.json().catch(() => null);
   if (!res.ok) {
+    // Log the full response so we can diagnose auth/path issues
+    console.error('[CD SAPI error]', {
+      url,
+      status: res.status,
+      body: data,
+    });
     const message =
-      (data as any)?.message || (data as any)?.error || res.statusText;
+      (data as any)?.message ||
+      (data as any)?.error ||
+      (data as any)?.Message ||
+      (data as any)?.errorMessage ||
+      JSON.stringify(data) ||
+      res.statusText;
     throw new Error(`CD API ${res.status}: ${message}`);
   }
   return data;

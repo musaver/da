@@ -4,8 +4,8 @@ import * as cd from '@/lib/consumerdirect';
 type Params = { params: Promise<{ action: string }> };
 
 export async function POST(req: NextRequest, { params }: Params) {
+  const { action } = await params;
   try {
-    const { action } = await params;
     const body = await req.json().catch(() => ({}));
     const { trackingToken, customerToken, ...data } = body;
 
@@ -76,17 +76,15 @@ export async function POST(req: NextRequest, { params }: Params) {
 
     return NextResponse.json(result);
   } catch (err: any) {
-    console.error('[signup API POST]', { action: (await params).action, message: err.message });
-    return NextResponse.json(
-      { error: err.message || 'Internal error' },
-      { status: 500 },
-    );
+    const msg = err?.message || String(err) || 'Internal error';
+    console.error('[signup API POST]', action, msg);
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
 
 export async function GET(req: NextRequest, { params }: Params) {
+  const { action } = await params;
   try {
-    const { action } = await params;
     const url = new URL(req.url);
     const trackingToken = url.searchParams.get('trackingToken') || '';
     const customerToken = url.searchParams.get('customerToken') || '';
@@ -115,10 +113,8 @@ export async function GET(req: NextRequest, { params }: Params) {
 
     return NextResponse.json(result);
   } catch (err: any) {
-    console.error('[signup API GET]', { action: (await params).action, message: err.message });
-    return NextResponse.json(
-      { error: err.message || 'Internal error' },
-      { status: 500 },
-    );
+    const msg = err?.message || String(err) || 'Internal error';
+    console.error('[signup API GET]', action, msg);
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
