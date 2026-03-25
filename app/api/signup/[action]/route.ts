@@ -4,8 +4,9 @@ import * as cd from '@/lib/consumerdirect';
 type Params = { params: Promise<{ action: string }> };
 
 export async function POST(req: NextRequest, { params }: Params) {
-  const { action } = await params;
+  let action = 'unknown';
   try {
+    action = (await params).action;
     const body = await req.json().catch(() => ({}));
     const { trackingToken, customerToken, ...data } = body;
 
@@ -83,8 +84,9 @@ export async function POST(req: NextRequest, { params }: Params) {
 }
 
 export async function GET(req: NextRequest, { params }: Params) {
-  const { action } = await params;
+  let action = 'unknown';
   try {
+    action = (await params).action;
     const url = new URL(req.url);
     const trackingToken = url.searchParams.get('trackingToken') || '';
     const customerToken = url.searchParams.get('customerToken') || '';

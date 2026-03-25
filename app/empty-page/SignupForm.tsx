@@ -7,21 +7,24 @@ import { useState, FormEvent } from 'react';
 async function api(action: string, body?: Record<string, unknown>) {
   const isGet = ['campaign-details', 'get-questions', 'security-questions'].includes(action);
 
-  if (isGet) {
-    const qs = new URLSearchParams(body as Record<string, string>).toString();
-    const res = await fetch(`/api/signup/${action}?${qs}`);
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || 'Request failed');
-    return data;
+  const res = isGet
+    ? await fetch(`/api/signup/${action}?${new URLSearchParams(body as Record<string, string>)}`)
+    : await fetch(`/api/signup/${action}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+  // Parse JSON safely — a 500 HTML page would fail JSON.parse
+  const text = await res.text();
+  let data: any;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    throw new Error(`Server error (${res.status}): ${text.slice(0, 200)}`);
   }
 
-  const res = await fetch(`/api/signup/${action}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || 'Request failed');
+  if (!res.ok) throw new Error(data?.error || `Request failed (${res.status})`);
   return data;
 }
 
