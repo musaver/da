@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
-import SignupWidget from './SignupWidget';
+import SignupForm from './SignupForm';
 
 export const metadata = {
   title: "Get Started - Dev Aspire",
@@ -35,7 +35,7 @@ export default function EmptyPage() {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-10">
-                <SignupWidget />
+                <SignupForm />
               </div>
             </div>
           </div>
