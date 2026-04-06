@@ -41,6 +41,13 @@ describe('SEO - Robots.txt', () => {
     expect(disallowList).toContain('/api/');
   });
 
+  test('robots.txt should NOT block service pages', () => {
+    const rules = Array.isArray(robotsConfig.rules) ? robotsConfig.rules : [robotsConfig.rules];
+    const wildcardRule = rules.find((r: any) => r.userAgent === '*');
+    const disallowList = Array.isArray(wildcardRule.disallow) ? wildcardRule.disallow : [wildcardRule.disallow];
+    expect(disallowList).not.toContain('/services/');
+  });
+
   test('robots.txt should reference the sitemap', () => {
     expect(robotsConfig.sitemap).toBeDefined();
     expect(robotsConfig.sitemap).toBe(`${SITE_URL}/sitemap.xml`);
