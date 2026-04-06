@@ -49,21 +49,25 @@ export default function EcommerceIndustry() {
       challenge: 'Payment Gateway Integration',
       solution: 'We integrate local payment gateways like JazzCash, Easypaisa, and international options like PayPal and Stripe.',
       icon: 'solar:wallet-linear',
+      color: 'primary',
     },
     {
       challenge: 'Logistics & Shipping',
       solution: 'Integration with courier services like TCS, Leopards, and PostEx for seamless order fulfillment.',
       icon: 'solar:delivery-linear',
+      color: 'success',
     },
     {
       challenge: 'Mobile Shopping',
       solution: 'Mobile-first designs optimized for the 90% of Pakistani shoppers who browse on smartphones.',
       icon: 'solar:smartphone-linear',
+      color: 'info',
     },
     {
       challenge: 'Trust & Credibility',
       solution: 'Professional design, customer reviews, secure checkout, and trust badges to build buyer confidence.',
       icon: 'solar:shield-check-linear',
+      color: 'warning',
     },
   ];
 
@@ -83,10 +87,10 @@ export default function EcommerceIndustry() {
   ];
 
   const techStack = [
-    { name: 'Shopify', desc: 'Full-featured platform for fast setup', logo: 'simple-icons:shopify' },
-    { name: 'WooCommerce', desc: 'WordPress-based flexible solution', logo: 'simple-icons:woocommerce' },
-    { name: 'Custom Development', desc: 'Next.js + Stripe for unique needs', logo: 'simple-icons:nextdotjs' },
-    { name: 'Medusa', desc: 'Headless commerce platform', logo: 'simple-icons:medusa' },
+    { name: 'Shopify', desc: 'Full-featured platform', logo: 'simple-icons:shopify' },
+    { name: 'WooCommerce', desc: 'WordPress solution', logo: 'simple-icons:woocommerce' },
+    { name: 'Custom Development', desc: 'Next.js + Stripe', logo: 'simple-icons:nextdotjs' },
+    { name: 'Medusa', desc: 'Headless commerce', logo: 'simple-icons:medusa' },
   ];
 
   const faqs = [
@@ -172,16 +176,20 @@ export default function EcommerceIndustry() {
           <div className="container">
             <div className="d-flex flex-column gap-10">
               <h2 className="mb-0 text-center" data-aos="fade-up">
-                E-Commerce Challenges <em className="font-instrument">&</em> Our Solutions
+                E-Commerce Challenges <em className="font-instrument">&</em> Solutions
               </h2>
               <div className="row g-4">
                 {challenges.map((item, idx) => (
                   <div key={idx} className="col-md-6" data-aos="fade-up" data-aos-delay={idx * 100}>
-                    <div className="card h-100">
-                      <div className="card-body d-flex flex-column gap-3">
-                        <iconify-icon icon={item.icon} className="fs-1 text-primary"></iconify-icon>
-                        <h4 className="mb-0">{item.challenge}</h4>
-                        <p className="mb-0 text-muted">{item.solution}</p>
+                    <div className={`card h-100 bg-${item.color}-subtle border-0`}>
+                      <div className="card-body d-flex flex-column gap-4 p-5">
+                        <div className={`bg-${item.color} round-50 rounded-circle hstack justify-content-center align-self-start`} style={{width: '50px', height: '50px'}}>
+                          <iconify-icon icon={item.icon} className="fs-4 text-white"></iconify-icon>
+                        </div>
+                        <div>
+                          <h4 className="mb-3">{item.challenge}</h4>
+                          <p className="mb-0 text-muted">{item.solution}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -219,11 +227,11 @@ export default function EcommerceIndustry() {
               <h2 className="mb-0 text-center" data-aos="fade-up">
                 E-Commerce <em className="font-instrument">Platforms</em> We Use
               </h2>
-              <div className="row g-4">
+              <div className="row g-4 justify-content-center">
                 {techStack.map((tech, idx) => (
-                  <div key={idx} className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay={idx * 100}>
-                    <div className="card h-100 text-center">
-                      <div className="card-body d-flex flex-column gap-3 align-items-center">
+                  <div key={idx} className="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay={idx * 100}>
+                    <div className="card h-100 text-center border-0 hover-lift">
+                      <div className="card-body d-flex flex-column gap-3 align-items-center p-5">
                         <iconify-icon icon={tech.logo} className="fs-1 text-primary"></iconify-icon>
                         <h5 className="mb-0">{tech.name}</h5>
                         <p className="mb-0 text-muted fs-4">{tech.desc}</p>
@@ -236,55 +244,8 @@ export default function EcommerceIndustry() {
           </div>
         </section>
 
-        {/* Services */}
-        <section className="py-10 py-lg-12 py-xl-13 bg-light">
-          <div className="container">
-            <div className="d-flex flex-column gap-10">
-              <h2 className="mb-0 text-center" data-aos="fade-up">
-                Our E-Commerce <em className="font-instrument">Services</em>
-              </h2>
-              <div className="row g-4">
-                {[
-                  {
-                    title: 'Shopify Development',
-                    desc: 'Complete Shopify store setup including theme customization, app integration, and optimization.',
-                    link: '/services/shopify-development',
-                  },
-                  {
-                    title: 'Custom E-Commerce',
-                    desc: 'Tailored marketplace platforms and multi-vendor stores built with Next.js and modern frameworks.',
-                    link: '/services/web-app-development',
-                  },
-                  {
-                    title: 'UI/UX Design',
-                    desc: 'Conversion-focused designs that guide customers through the buying journey seamlessly.',
-                    link: '/services/ui-ux-design',
-                  },
-                  {
-                    title: 'Digital Marketing',
-                    desc: 'SEO, Google Ads, Facebook/Instagram marketing to drive traffic and sales to your store.',
-                    link: '/services/digital-marketing',
-                  },
-                ].map((service, idx) => (
-                  <div key={idx} className="col-md-6" data-aos="fade-up" data-aos-delay={idx * 100}>
-                    <Link href={service.link} className="text-decoration-none">
-                      <div className="card h-100 hover-lift">
-                        <div className="card-body d-flex flex-column gap-3">
-                          <h4 className="mb-0">{service.title}</h4>
-                          <p className="mb-0 text-muted">{service.desc}</p>
-                          <span className="text-primary mt-auto">Learn More →</span>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ */}
-        <section className="py-10 py-lg-12 py-xl-13">
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
           <div className="container">
             <div className="d-flex flex-column gap-10">
               <h2 className="mb-0 text-center" data-aos="fade-up">
@@ -292,12 +253,12 @@ export default function EcommerceIndustry() {
               </h2>
               <div className="row justify-content-center">
                 <div className="col-lg-10">
-                  <div className="accordion" id="faqAccordion" data-aos="fade-up">
+                  <div className="accordion accordion-flush d-flex flex-column gap-3" id="faqAccordion" data-aos="fade-up">
                     {faqs.map((faq, idx) => (
-                      <div key={idx} className="accordion-item">
+                      <div key={idx} className="accordion-item border rounded-1">
                         <h3 className="accordion-header">
                           <button
-                            className={`accordion-button ${idx !== 0 ? 'collapsed' : ''}`}
+                            className={`accordion-button fs-7 fw-medium ${idx !== 0 ? 'collapsed' : ''}`}
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target={`#faq${idx}`}
@@ -311,7 +272,7 @@ export default function EcommerceIndustry() {
                           className={`accordion-collapse collapse ${idx === 0 ? 'show' : ''}`}
                           data-bs-parent="#faqAccordion"
                         >
-                          <div className="accordion-body">{faq.answer}</div>
+                          <div className="accordion-body pt-0">{faq.answer}</div>
                         </div>
                       </div>
                     ))}
@@ -323,29 +284,35 @@ export default function EcommerceIndustry() {
         </section>
 
         {/* CTA */}
-        <section className="py-10 py-lg-12 py-xl-13 bg-dark">
+        <section className="py-10 py-lg-12 py-xl-13">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-lg-8 text-center">
-                <div className="d-flex flex-column gap-7" data-aos="fade-up">
-                  <div>
-                    <h2 className="mb-4 text-white">
-                      Ready to Launch Your <em className="font-instrument">Online Store?</em>
-                    </h2>
-                    <p className="mb-0 text-white text-opacity-75">
-                      Get a free consultation and discover how we can help you build a successful e-commerce business
-                      in Pakistan with the right platform, features, and marketing strategy.
-                    </p>
-                  </div>
-                  <div className="d-flex gap-3 justify-content-center flex-wrap">
-                    <Link href="/contact" className="btn btn-white">
-                      <span className="btn-text">Get Free Consultation</span>
-                      <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-dark text-white round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
-                    </Link>
-                    <Link href="/services/shopify-development" className="btn btn-outline-white">
-                      <span className="btn-text">Shopify Services</span>
-                      <iconify-icon icon="solar:shop-linear" className="btn-icon round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
-                    </Link>
+              <div className="col-lg-10">
+                <div className="card bg-dark mb-0" data-aos="fade-up">
+                  <div className="card-body px-lg-7 py-lg-10">
+                    <div className="row align-items-center justify-content-between gap-4 gap-lg-0">
+                      <div className="col-lg-6">
+                        <h2 className="mb-0 text-white">
+                          Ready to Launch Your <em className="font-instrument">Online Store?</em>
+                        </h2>
+                        <p className="mb-0 text-white text-opacity-75 mt-3">
+                          Get a free consultation and discover how we can help you build a successful e-commerce business
+                          in Pakistan with the right platform, features, and marketing strategy.
+                        </p>
+                      </div>
+                      <div className="col-lg-6">
+                        <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end gap-3">
+                          <Link href="/contact" className="btn btn-white">
+                            <span className="btn-text">Get Free Consultation</span>
+                            <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-dark text-white round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+                          </Link>
+                          <Link href="/services/shopify-development" className="btn btn-outline-white">
+                            <span className="btn-text">Shopify Services</span>
+                            <iconify-icon icon="solar:shop-linear" className="btn-icon round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
