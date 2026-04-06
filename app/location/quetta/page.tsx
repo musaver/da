@@ -111,7 +111,7 @@ export default function QuettaLocation() {
     {
       question: 'Why choose Dev Aspire for web design in Quetta?',
       answer:
-        'We understand Quetta and Balochistan\'s unique business landscape, from the energy sector to traditional trade. Our team creates professional websites that build credibility and help you compete regionally and nationally. We offer competitive pricing, quality work, and ongoing support tailored for Quetta businesses.',
+        'We understand Quetta and Balochistan&apos;s unique business landscape, from the energy sector to traditional trade. Our team creates professional websites that build credibility and help you compete regionally and nationally. We offer competitive pricing, quality work, and ongoing support tailored for Quetta businesses.',
     },
     {
       question: 'How much does website development cost in Quetta?',
@@ -205,7 +205,7 @@ export default function QuettaLocation() {
                 {[
                   {
                     title: 'Regional Understanding',
-                    desc: 'Knowledge of Quetta and Balochistan\'s business environment, industrial sectors, and market dynamics.',
+                    desc: 'Knowledge of Quetta and Balochistan&apos;s business environment, industrial sectors, and market dynamics.',
                     icon: 'solar:map-point-linear',
                   },
                   {

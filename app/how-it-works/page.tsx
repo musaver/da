@@ -100,7 +100,7 @@ export default function HowItWorks() {
                   subtitle: 'Bringing Ideas to Life',
                   duration: '1-3 Weeks',
                   color: 'orange',
-                  description: 'Our designers create wireframes and high-fidelity mockups in Figma. You'll see exactly how your website or app will look and function before any code is written. We iterate based on your feedback until the design is perfect.',
+                  description: 'Our designers create wireframes and high-fidelity mockups in Figma. You&apos;ll see exactly how your website or app will look and function before any code is written. We iterate based on your feedback until the design is perfect.',
                   deliverables: [
                     'Low-fidelity wireframes',
                     'High-fidelity visual designs',
@@ -145,7 +145,7 @@ export default function HowItWorks() {
                   subtitle: 'Going Live',
                   duration: '1-3 Days',
                   color: 'danger',
-                  description: 'It's time to go live! We handle all technical aspects of deployment including domain setup, hosting configuration, SSL certificates, and DNS propagation. We monitor closely during launch to ensure a smooth transition.',
+                  description: 'It&apos;s time to go live! We handle all technical aspects of deployment including domain setup, hosting configuration, SSL certificates, and DNS propagation. We monitor closely during launch to ensure a smooth transition.',
                   deliverables: [
                     'Domain and hosting setup',
                     'SSL certificate installation',
@@ -176,7 +176,7 @@ export default function HowItWorks() {
                   subtitle: 'Long-term Partnership',
                   duration: 'Ongoing',
                   color: 'primary',
-                  description: 'Our relationship doesn't end at launch. We provide ongoing support, maintenance, and optimization to help your business grow. Whether you need bug fixes, new features, or marketing support, we're here for the long haul.',
+                  description: 'Our relationship doesn&apos;t end at launch. We provide ongoing support, maintenance, and optimization to help your business grow. Whether you need bug fixes, new features, or marketing support, we&apos;re here for the long haul.',
                   deliverables: [
                     '30-90 days of free post-launch support',
                     'Monthly maintenance packages available',

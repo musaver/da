@@ -44,7 +44,7 @@ export default function LocationsHub() {
     {
       city: 'Karachi',
       province: 'Sindh',
-      description: 'Pakistan\'s largest city and commercial hub. Serving e-commerce, finance, logistics, and diverse industries.',
+      description: 'Pakistan&apos;s largest city and commercial hub. Serving e-commerce, finance, logistics, and diverse industries.',
       highlights: ['E-Commerce Hub', 'Financial Services', 'Logistics & Shipping', 'Manufacturing'],
       icon: 'solar:city-linear',
       color: 'primary',
@@ -62,7 +62,7 @@ export default function LocationsHub() {
     {
       city: 'Islamabad',
       province: 'Federal Capital',
-      description: 'Pakistan\'s capital city serving government, corporate, and growing startup ecosystem.',
+      description: 'Pakistan&apos;s capital city serving government, corporate, and growing startup ecosystem.',
       highlights: ['Government Sector', 'Tech Startups', 'Corporate Enterprises', 'International Organizations'],
       icon: 'solar:star-circle-linear',
       color: 'info',
@@ -89,7 +89,7 @@ export default function LocationsHub() {
     {
       city: 'Multan',
       province: 'Punjab',
-      description: 'City of Saints and South Punjab\'s economic hub serving agriculture, trade, and regional businesses.',
+      description: 'City of Saints and South Punjab&apos;s economic hub serving agriculture, trade, and regional businesses.',
       highlights: ['Agriculture Trading', 'Food Processing', 'Retail', 'Education'],
       icon: 'solar:leaf-linear',
       color: 'success',
@@ -98,7 +98,7 @@ export default function LocationsHub() {
     {
       city: 'Peshawar',
       province: 'Khyber Pakhtunkhwa',
-      description: 'Historic trading hub serving KPK\'s businesses in trade, retail, and emerging sectors.',
+      description: 'Historic trading hub serving KPK&apos;s businesses in trade, retail, and emerging sectors.',
       highlights: ['Trade & Export', 'Retail', 'Education', 'Professional Services'],
       icon: 'solar:box-linear',
       color: 'info',
@@ -107,7 +107,7 @@ export default function LocationsHub() {
     {
       city: 'Quetta',
       province: 'Balochistan',
-      description: 'Balochistan\'s capital serving energy, mining, trading, and growing service sectors.',
+      description: 'Balochistan&apos;s capital serving energy, mining, trading, and growing service sectors.',
       highlights: ['Energy Sector', 'Mining', 'Trade & Logistics', 'Professional Services'],
       icon: 'solar:bolt-linear',
       color: 'warning',

@@ -630,7 +630,7 @@ export default function Home() {
                   </h2>
                   <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     From Karachi to Peshawar, Dev Aspire provides web design, development, and digital marketing services to businesses throughout Pakistan. We understand local markets while delivering international quality.
-                  </h2>
+                  </p>
                 </div>
               </div>
               <div className="row">

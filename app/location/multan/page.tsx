@@ -82,7 +82,7 @@ export default function MultanLocation() {
     },
     {
       name: 'Retail & Shopping',
-      desc: 'E-commerce websites for Multan\'s traditional and modern retail',
+      desc: 'E-commerce websites for Multan&apos;s traditional and modern retail',
       icon: 'solar:shop-2-linear',
     },
     {
@@ -111,7 +111,7 @@ export default function MultanLocation() {
     {
       question: 'Why choose a web design agency in Multan?',
       answer:
-        'A local agency understands Multan\'s business culture, target demographics, and regional preferences. We provide personalized service, competitive pricing, and easy face-to-face consultations. Plus, we\'re familiar with the South Punjab market and can help you reach customers effectively across the region.',
+        'A local agency understands Multan&apos;s business culture, target demographics, and regional preferences. We provide personalized service, competitive pricing, and easy face-to-face consultations. Plus, we&apos;re familiar with the South Punjab market and can help you reach customers effectively across the region.',
     },
     {
       question: 'What is the cost of website development in Multan?',
@@ -131,7 +131,7 @@ export default function MultanLocation() {
     {
       question: 'What makes Multan businesses unique for digital marketing?',
       answer:
-        'Multan has a rich cultural heritage and strong agricultural/trading economy. Digital marketing needs to balance traditional values with modern approaches, emphasize trust and relationships, and reach both local consumers and B2B buyers. We create campaigns that resonate with Multan\'s business community.',
+        'Multan has a rich cultural heritage and strong agricultural/trading economy. Digital marketing needs to balance traditional values with modern approaches, emphasize trust and relationships, and reach both local consumers and B2B buyers. We create campaigns that resonate with Multan&apos;s business community.',
     },
     {
       question: 'Do you provide ongoing website maintenance?',
@@ -205,7 +205,7 @@ export default function MultanLocation() {
                 {[
                   {
                     title: 'Regional Expertise',
-                    desc: 'Deep understanding of Multan and South Punjab\'s business landscape, culture, and consumer behavior.',
+                    desc: 'Deep understanding of Multan and South Punjab&apos;s business landscape, culture, and consumer behavior.',
                     icon: 'solar:map-point-linear',
                   },
                   {

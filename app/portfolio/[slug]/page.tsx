@@ -246,7 +246,7 @@ export default function CaseStudyPage({ params }: Props) {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         )}
 
         {/* Related Projects */}
@@ -289,7 +289,7 @@ export default function CaseStudyPage({ params }: Props) {
                       Have a Project in <em className="font-instrument">Mind?</em>
                     </h2>
                     <p className="mb-0 text-white text-opacity-75">
-                      Let's discuss how we can help you achieve similar results. Get a free consultation
+                      Let&apos;s discuss how we can help you achieve similar results. Get a free consultation
                       to explore your project requirements and our approach.
                     </p>
                   </div>

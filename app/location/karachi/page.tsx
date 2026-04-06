@@ -83,7 +83,7 @@ export default function KarachiLocation() {
                 {[
                   { icon: 'solar:buildings-3-linear', title: 'Understanding Karachi Market', desc: 'We understand the unique business landscape of Karachi—from DHA and Clifton enterprises to Saddar retail businesses and SITE industrial companies.' },
                   { icon: 'solar:global-linear', title: 'Remote Collaboration', desc: 'Though based in Islamabad, we work seamlessly with Karachi clients through video calls, project management tools, and regular online meetings.' },
-                  { icon: 'solar:clock-circle-linear', title: 'Quick Turnaround', desc: 'We respect Karachi's fast-paced business culture with efficient project timelines and responsive communication throughout the development process.' },
+                  { icon: 'solar:clock-circle-linear', title: 'Quick Turnaround', desc: 'We respect Karachi&apos;s fast-paced business culture with efficient project timelines and responsive communication throughout the development process.' },
                   { icon: 'solar:hand-money-linear', title: 'Competitive Pricing', desc: 'Transparent, competitive rates for Karachi businesses with flexible payment plans and no hidden costs.' },
                 ].map((item, idx) => (
                   <div key={idx} className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
@@ -189,10 +189,10 @@ export default function KarachiLocation() {
               <div className="row">
                 {[
                   { icon: 'solar:cart-large-2-linear', title: 'E-Commerce & Retail', desc: 'Online stores for Karachi retailers from Saddar to Tariq Road, reaching customers across Pakistan.' },
-                  { icon: 'solar:wallet-money-linear', title: 'Finance & FinTech', desc: 'Secure web platforms for Karachi\'s financial services, banks, and fintech startups.' },
-                  { icon: 'solar:ship-linear', title: 'Logistics & Shipping', desc: 'Custom solutions for Karachi\'s port businesses, logistics companies, and freight forwarders.' },
+                  { icon: 'solar:wallet-money-linear', title: 'Finance & FinTech', desc: 'Secure web platforms for Karachi&apos;s financial services, banks, and fintech startups.' },
+                  { icon: 'solar:ship-linear', title: 'Logistics & Shipping', desc: 'Custom solutions for Karachi&apos;s port businesses, logistics companies, and freight forwarders.' },
                   { icon: 'solar:buildings-linear', title: 'Real Estate', desc: 'Property websites for DHA, Clifton, and Bahria Town real estate agencies and developers.' },
-                  { icon: 'solar:chef-hat-minimalistic-linear', title: 'Food & Restaurants', desc: 'Online ordering systems and websites for Karachi\'s vibrant restaurant scene.' },
+                  { icon: 'solar:chef-hat-minimalistic-linear', title: 'Food & Restaurants', desc: 'Online ordering systems and websites for Karachi&apos;s vibrant restaurant scene.' },
                   { icon: 'solar:shop-2-linear', title: 'Manufacturing', desc: 'B2B platforms for SITE and Korangi industrial manufacturers and exporters.' },
                 ].map((industry, idx) => (
                   <div key={idx} className="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
@@ -220,10 +220,10 @@ export default function KarachiLocation() {
                     Karachi's Growing <em className="font-instrument">Digital Economy</em>
                   </h2>
                   <p className="fs-5">
-                    As Pakistan's largest city and economic hub, Karachi is experiencing rapid digital transformation. With over 16 million residents and home to 70% of Pakistan's e-commerce businesses, Karachi presents enormous opportunities for businesses willing to invest in their online presence.
+                    As Pakistan&apos;s largest city and economic hub, Karachi is experiencing rapid digital transformation. With over 16 million residents and home to 70% of Pakistan&apos;s e-commerce businesses, Karachi presents enormous opportunities for businesses willing to invest in their online presence.
                   </p>
                   <p className="fs-5">
-                    From the bustling markets of Saddar and Tariq Road moving online to DHA startups launching innovative SaaS products, Karachi businesses are embracing digital solutions. The city's thriving entrepreneurial ecosystem, access to talent, and diverse economy make it a prime market for web design and development services.
+                    From the bustling markets of Saddar and Tariq Road moving online to DHA startups launching innovative SaaS products, Karachi businesses are embracing digital solutions. The city&apos;s thriving entrepreneurial ecosystem, access to talent, and diverse economy make it a prime market for web design and development services.
                   </p>
                   <p className="fs-5">
                     Dev Aspire has worked with numerous Karachi clients across e-commerce, logistics, finance, and real estate sectors, helping them establish strong online presence and compete effectively in Pakistan's digital economy.
@@ -247,7 +247,7 @@ export default function KarachiLocation() {
                   { id: 'Two', question: 'How much does web design cost in Karachi?', answer: 'Web design costs in Karachi typically range from PKR 200,000 for basic websites to PKR 800,000+ for complex web applications. E-commerce stores range from PKR 250,000 to PKR 600,000. We provide transparent quotes based on your specific requirements, features needed, and project timeline. Contact us for a customized proposal for your Karachi business.', expanded: false },
                   { id: 'Three', question: 'Can you help with digital marketing for Karachi customers?', answer: 'Absolutely! We specialize in digital marketing tailored for the Karachi market. This includes local SEO to rank for "business in Karachi" searches, targeted Google Ads campaigns, social media marketing aimed at Karachi demographics, and content strategies that resonate with Karachi audiences. We understand local preferences and buying behaviors.', expanded: false },
                   { id: 'Four', question: 'Do you offer payment options for Karachi businesses?', answer: 'Yes, we offer flexible payment options including milestone-based payments (40% upfront, 30% mid-project, 30% on completion), bank transfers to Pakistani banks, JazzCash, Easypaisa, or international payments via PayPal and Stripe. We invoice in PKR for Pakistani clients.', expanded: false },
-                  { id: 'Five', question: 'How long does it take to complete a website project?', answer: 'Timelines depend on project complexity. A basic business website takes 3-4 weeks, an e-commerce store 4-6 weeks, and custom web applications 8-12 weeks. We provide detailed timelines in our proposal and keep you updated throughout. We respect Karachi\'s fast-paced business culture with efficient delivery.', expanded: false },
+                  { id: 'Five', question: 'How long does it take to complete a website project?', answer: 'Timelines depend on project complexity. A basic business website takes 3-4 weeks, an e-commerce store 4-6 weeks, and custom web applications 8-12 weeks. We provide detailed timelines in our proposal and keep you updated throughout. We respect Karachi&apos;s fast-paced business culture with efficient delivery.', expanded: false },
                   { id: 'Six', question: 'Do you provide ongoing support after launch?', answer: 'Yes! We offer maintenance packages starting from PKR 25,000/month including bug fixes, security updates, content updates, and technical support. We also provide training so your Karachi team can manage basic updates independently. Our relationship continues long after launch to help your business grow.', expanded: false },
                 ].map((faq, idx) => (
                   <div key={idx} className="accordion-item border rounded-1" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>

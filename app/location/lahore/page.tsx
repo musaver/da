@@ -79,10 +79,10 @@ export default function LahoreLocation() {
               </h2>
               <div className="row">
                 {[
-                  { icon: 'solar:palette-2-linear', title: 'Creative Excellence', desc: 'We match Lahore\'s creative spirit with innovative designs and modern development techniques that make your brand stand out.' },
-                  { icon: 'solar:diploma-linear', title: 'EdTech & Education', desc: 'Specialized expertise in building platforms for Lahore\'s thriving education sector, from schools to online learning platforms.' },
-                  { icon: 'solar:money-bag-linear', title: 'Fashion & E-Commerce', desc: 'Perfect solutions for Lahore\'s fashion industry with beautiful e-commerce stores that showcase your products.' },
-                  { icon: 'solar:cpu-bolt-linear', title: 'Tech Startups', desc: 'Supporting Lahore\'s growing startup ecosystem with scalable web and mobile applications built for growth.' },
+                  { icon: 'solar:palette-2-linear', title: 'Creative Excellence', desc: 'We match Lahore&apos;s creative spirit with innovative designs and modern development techniques that make your brand stand out.' },
+                  { icon: 'solar:diploma-linear', title: 'EdTech & Education', desc: 'Specialized expertise in building platforms for Lahore&apos;s thriving education sector, from schools to online learning platforms.' },
+                  { icon: 'solar:money-bag-linear', title: 'Fashion & E-Commerce', desc: 'Perfect solutions for Lahore&apos;s fashion industry with beautiful e-commerce stores that showcase your products.' },
+                  { icon: 'solar:cpu-bolt-linear', title: 'Tech Startups', desc: 'Supporting Lahore&apos;s growing startup ecosystem with scalable web and mobile applications built for growth.' },
                 ].map((item, idx) => (
                   <div key={idx} className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
                     <div className="card h-100">
@@ -184,12 +184,12 @@ export default function LahoreLocation() {
               </h2>
               <div className="row">
                 {[
-                  { icon: 'solar:diploma-linear', title: 'Education & EdTech', desc: 'Learning platforms for Lahore\'s schools, universities, and online education startups.' },
-                  { icon: 'solar:t-shirt-linear', title: 'Fashion & Apparel', desc: 'E-commerce websites for Lahore\'s fashion designers and clothing brands.' },
+                  { icon: 'solar:diploma-linear', title: 'Education & EdTech', desc: 'Learning platforms for Lahore&apos;s schools, universities, and online education startups.' },
+                  { icon: 'solar:t-shirt-linear', title: 'Fashion & Apparel', desc: 'E-commerce websites for Lahore&apos;s fashion designers and clothing brands.' },
                   { icon: 'solar:buildings-3-linear', title: 'Real Estate', desc: 'Property portals for DHA, Bahria Town, and other Lahore housing societies.' },
-                  { icon: 'solar:chef-hat-minimalistic-linear', title: 'Food & Restaurants', desc: 'Online menus and ordering for Lahore\'s famous food scene from MM Alam to Liberty.' },
-                  { icon: 'solar:heart-pulse-linear', title: 'Healthcare', desc: 'Medical websites and appointment systems for Lahore\'s hospitals and clinics.' },
-                  { icon: 'solar:rocket-2-linear', title: 'Tech Startups', desc: 'MVPs and scalable platforms for Lahore\'s growing startup ecosystem.' },
+                  { icon: 'solar:chef-hat-minimalistic-linear', title: 'Food & Restaurants', desc: 'Online menus and ordering for Lahore&apos;s famous food scene from MM Alam to Liberty.' },
+                  { icon: 'solar:heart-pulse-linear', title: 'Healthcare', desc: 'Medical websites and appointment systems for Lahore&apos;s hospitals and clinics.' },
+                  { icon: 'solar:rocket-2-linear', title: 'Tech Startups', desc: 'MVPs and scalable platforms for Lahore&apos;s growing startup ecosystem.' },
                 ].map((industry, idx) => (
                   <div key={idx} className="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
                     <div className="card h-100">
@@ -239,8 +239,8 @@ export default function LahoreLocation() {
                 {[
                   { id: 'One', question: 'Do you have an office in Lahore?', answer: 'We are based in Islamabad but work seamlessly with Lahore clients through online collaboration. Many Lahore businesses prefer this arrangement as it provides access to our full team without geographic constraints. We use video calls, Slack, and project management tools for smooth communication.', expanded: true },
                   { id: 'Two', question: 'How much does web design cost for Lahore businesses?', answer: 'Web design costs in Lahore range from PKR 200,000 for basic websites to PKR 1,000,000+ for complex applications. Fashion e-commerce stores typically cost PKR 300,000-600,000. Education platforms range from PKR 500,000-1,500,000. We provide detailed quotes tailored to your specific needs and budget.', expanded: false },
-                  { id: 'Three', question: 'Can you help Lahore fashion brands sell online?', answer: 'Yes! We specialize in e-commerce solutions for Lahore\'s fashion industry. We build beautiful Shopify stores with features like size guides, lookbooks, Instagram integration, and payment gateways (JazzCash, Easypaisa, Stripe). We understand fashion e-commerce\'s unique requirements and Pakistani buyer preferences.', expanded: false },
-                  { id: 'Four', question: 'Do you build educational platforms for Lahore schools?', answer: 'Absolutely! We have experience building learning management systems (LMS), online course platforms, and school websites for Lahore\'s education sector. Features include student portals, online assignments, video lessons, quizzes, parent dashboards, and fee management systems.', expanded: false },
+                  { id: 'Three', question: 'Can you help Lahore fashion brands sell online?', answer: 'Yes! We specialize in e-commerce solutions for Lahore&apos;s fashion industry. We build beautiful Shopify stores with features like size guides, lookbooks, Instagram integration, and payment gateways (JazzCash, Easypaisa, Stripe). We understand fashion e-commerce&apos;s unique requirements and Pakistani buyer preferences.', expanded: false },
+                  { id: 'Four', question: 'Do you build educational platforms for Lahore schools?', answer: 'Absolutely! We have experience building learning management systems (LMS), online course platforms, and school websites for Lahore&apos;s education sector. Features include student portals, online assignments, video lessons, quizzes, parent dashboards, and fee management systems.', expanded: false },
                   { id: 'Five', question: 'What payment methods do you accept?', answer: 'We accept bank transfers (Pakistani banks), JazzCash, Easypaisa, and international payments via PayPal or Stripe. We offer milestone-based payments (40% upfront, 30% mid-project, 30% completion) for larger projects and monthly retainers for ongoing services.', expanded: false },
                   { id: 'Six', question: 'How long does a typical project take?', answer: 'Project timelines vary: basic websites (3-4 weeks), fashion e-commerce stores (4-6 weeks), education platforms (8-12 weeks), and custom applications (12+ weeks). We provide detailed timelines in proposals and keep you updated with regular progress reports throughout development.', expanded: false },
                 ].map((faq, idx) => (

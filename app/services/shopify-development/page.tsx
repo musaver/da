@@ -133,7 +133,7 @@ export default function ShopifyDevelopment() {
               </h2>
               <div className="row">
                 {[
-                  { title: 'Easy to Manage', desc: 'Shopify\'s intuitive admin panel lets you manage products, orders, and customers without any technical knowledge.' },
+                  { title: 'Easy to Manage', desc: 'Shopify&apos;s intuitive admin panel lets you manage products, orders, and customers without any technical knowledge.' },
                   { title: 'Secure & Reliable', desc: 'PCI-DSS compliant hosting with 99.99% uptime, SSL certificates, and automatic security updates out of the box.' },
                   { title: 'Scalable Platform', desc: 'From your first sale to millions in revenue, Shopify scales with your business without performance issues.' },
                   { title: 'Global Payments', desc: 'Accept payments via JazzCash, Easypaisa, Stripe, PayPal, and 100+ other payment providers for Pakistani and international customers.' },
@@ -171,7 +171,7 @@ export default function ShopifyDevelopment() {
                   { id: 'Four', question: 'Do you migrate existing stores to Shopify?', answer: 'Yes! We migrate stores from WooCommerce, Magento, BigCommerce, or any platform to Shopify. We transfer all products, customers, orders, and content while preserving SEO rankings with proper 301 redirects. Migration typically takes 1-2 weeks depending on store size.', expanded: false },
                   { id: 'Five', question: 'Can you develop custom Shopify apps?', answer: 'Absolutely! We build custom Shopify apps for unique business needs: custom checkout flows, inventory management systems, loyalty programs, subscription billing, and integrations with third-party systems. Custom apps start from PKR 300,000 depending on complexity.', expanded: false },
                   { id: 'Six', question: 'Do you provide ongoing Shopify maintenance?', answer: 'Yes, we offer monthly retainer packages for ongoing support including theme updates, bug fixes, adding new features, SEO optimization, and speed improvements. Maintenance packages start from PKR 25,000/month based on your needs.', expanded: false },
-                  { id: 'Seven', question: 'Is Shopify good for small businesses in Pakistan?', answer: 'Yes! Shopify is perfect for Pakistani startups and small businesses. It\'s cost-effective (starting at $39/month), requires no technical knowledge to manage, handles all hosting and security, and scales as you grow. You can start small and upgrade as sales increase.', expanded: false },
+                  { id: 'Seven', question: 'Is Shopify good for small businesses in Pakistan?', answer: 'Yes! Shopify is perfect for Pakistani startups and small businesses. It&apos;s cost-effective (starting at $39/month), requires no technical knowledge to manage, handles all hosting and security, and scales as you grow. You can start small and upgrade as sales increase.', expanded: false },
                 ].map((faq, idx) => (
                   <div key={idx} className="accordion-item border rounded-1 position-relative overflow-hidden" data-aos="fade-up"
                     data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">

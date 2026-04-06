@@ -263,7 +263,7 @@ export default function EducationIndustry() {
                 {[
                   {
                     title: 'Custom Web Development',
-                    desc: 'Tailored websites and portals built specifically for your institution\'s unique needs and workflows.',
+                    desc: 'Tailored websites and portals built specifically for your institution&apos;s unique needs and workflows.',
                     link: '/services/web-app-development',
                   },
                   {

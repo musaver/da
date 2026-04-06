@@ -82,7 +82,7 @@ export default function IslamabadLocation() {
     },
     {
       name: 'Tech Startups',
-      desc: 'Web platforms for Islamabad\'s growing startup ecosystem',
+      desc: 'Web platforms for Islamabad&apos;s growing startup ecosystem',
       icon: 'solar:rocket-2-linear',
     },
     {
@@ -126,12 +126,12 @@ export default function IslamabadLocation() {
     {
       question: 'Can you help with SEO for Islamabad-based businesses?',
       answer:
-        'Absolutely! We specialize in local SEO for Islamabad businesses, helping you rank for location-specific keywords like "services in Islamabad" or "Islamabad [industry]". Our strategies include Google Business Profile optimization, local citations, and content targeting the capital\'s audience.',
+        'Absolutely! We specialize in local SEO for Islamabad businesses, helping you rank for location-specific keywords like "services in Islamabad" or "Islamabad [industry]". Our strategies include Google Business Profile optimization, local citations, and content targeting the capital&apos;s audience.',
     },
     {
       question: 'What makes Islamabad different for digital marketing?',
       answer:
-        'Islamabad has a highly educated demographic, strong government and corporate presence, and growing startup ecosystem. Marketing strategies need to reflect the city\'s professional culture, emphasize credibility and quality, and target both B2B and B2C audiences effectively.',
+        'Islamabad has a highly educated demographic, strong government and corporate presence, and growing startup ecosystem. Marketing strategies need to reflect the city&apos;s professional culture, emphasize credibility and quality, and target both B2B and B2C audiences effectively.',
     },
     {
       question: 'Do you provide ongoing support after launch?',
@@ -206,7 +206,7 @@ export default function IslamabadLocation() {
                 {[
                   {
                     title: 'Local Expertise',
-                    desc: 'Deep understanding of Islamabad\'s business environment, from government procurement processes to startup culture.',
+                    desc: 'Deep understanding of Islamabad&apos;s business environment, from government procurement processes to startup culture.',
                     icon: 'solar:map-point-linear',
                   },
                   {
@@ -226,7 +226,7 @@ export default function IslamabadLocation() {
                   },
                   {
                     title: 'Startup-Friendly',
-                    desc: 'Flexible pricing and agile development processes perfect for Islamabad\'s growing startup ecosystem.',
+                    desc: 'Flexible pricing and agile development processes perfect for Islamabad&apos;s growing startup ecosystem.',
                     icon: 'solar:lightbulb-bolt-linear',
                   },
                   {

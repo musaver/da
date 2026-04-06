@@ -261,7 +261,7 @@ export default function IndustriesHub() {
                   },
                   {
                     service: 'UI/UX Design',
-                    desc: 'User-centered designs optimized for your industry\'s user expectations.',
+                    desc: 'User-centered designs optimized for your industry&apos;s user expectations.',
                     icon: 'solar:palette-linear',
                     link: '/services/ui-ux-design',
                   },

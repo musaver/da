@@ -111,7 +111,7 @@ export default function FaisalabadLocation() {
     {
       question: 'Why choose Dev Aspire for web design in Faisalabad?',
       answer:
-        'We understand Faisalabad\'s industrial and commercial landscape, especially the textile and manufacturing sectors. We create professional websites that help local businesses compete nationally and internationally. Our team delivers quality work at competitive rates with ongoing support.',
+        'We understand Faisalabad&apos;s industrial and commercial landscape, especially the textile and manufacturing sectors. We create professional websites that help local businesses compete nationally and internationally. Our team delivers quality work at competitive rates with ongoing support.',
     },
     {
       question: 'How much does a website cost in Faisalabad?',
@@ -121,7 +121,7 @@ export default function FaisalabadLocation() {
     {
       question: 'Can you create B2B websites for textile exporters?',
       answer:
-        'Yes! We specialize in B2B websites for Faisalabad\'s textile and manufacturing sector. Our solutions include product catalogs, inquiry forms, sample request systems, and integration with international payment gateways. We understand the needs of exporters and buyers.',
+        'Yes! We specialize in B2B websites for Faisalabad&apos;s textile and manufacturing sector. Our solutions include product catalogs, inquiry forms, sample request systems, and integration with international payment gateways. We understand the needs of exporters and buyers.',
     },
     {
       question: 'Do you help with SEO for Faisalabad businesses?',

@@ -77,7 +77,7 @@ export default function RawalpindiLocation() {
   const industries = [
     {
       name: 'Retail & Shopping',
-      desc: 'E-commerce and retail websites for Rawalpindi\'s shopping districts',
+      desc: 'E-commerce and retail websites for Rawalpindi&apos;s shopping districts',
       icon: 'solar:shop-2-linear',
     },
     {
@@ -111,7 +111,7 @@ export default function RawalpindiLocation() {
     {
       question: 'Why work with a Rawalpindi-based web design agency?',
       answer:
-        'A local agency understands Rawalpindi\'s business culture, target audience preferences, and market dynamics. We offer competitive pricing, easy in-person meetings, and faster turnaround times compared to international agencies. Plus, we\'re familiar with local competitors and can help you stand out in the twin cities market.',
+        'A local agency understands Rawalpindi&apos;s business culture, target audience preferences, and market dynamics. We offer competitive pricing, easy in-person meetings, and faster turnaround times compared to international agencies. Plus, we&apos;re familiar with local competitors and can help you stand out in the twin cities market.',
     },
     {
       question: 'What is the cost of website development in Rawalpindi?',
@@ -131,7 +131,7 @@ export default function RawalpindiLocation() {
     {
       question: 'What makes Rawalpindi different for digital marketing?',
       answer:
-        'Rawalpindi has a strong commercial culture with bustling markets, manufacturing base, and diverse consumer demographics. Marketing needs to be practical, value-focused, and build trust. We create campaigns that resonate with Rawalpindi\'s business community and consumer preferences.',
+        'Rawalpindi has a strong commercial culture with bustling markets, manufacturing base, and diverse consumer demographics. Marketing needs to be practical, value-focused, and build trust. We create campaigns that resonate with Rawalpindi&apos;s business community and consumer preferences.',
     },
     {
       question: 'Do you provide website maintenance services?',
@@ -205,7 +205,7 @@ export default function RawalpindiLocation() {
                 {[
                   {
                     title: 'Local Market Knowledge',
-                    desc: 'Deep understanding of Rawalpindi\'s business districts, customer preferences, and competitive landscape.',
+                    desc: 'Deep understanding of Rawalpindi&apos;s business districts, customer preferences, and competitive landscape.',
                     icon: 'solar:map-point-linear',
                   },
                   {

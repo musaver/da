@@ -111,7 +111,7 @@ export default function PeshawarLocation() {
     {
       question: 'Why choose Dev Aspire for web design in Peshawar?',
       answer:
-        'We understand Peshawar\'s unique business environment and Khyber Pakhtunkhwa\'s market dynamics. Our team delivers professional websites at competitive rates with ongoing support. We combine modern design standards with cultural sensitivity and local market knowledge to create websites that resonate with your audience.',
+        'We understand Peshawar&apos;s unique business environment and Khyber Pakhtunkhwa&apos;s market dynamics. Our team delivers professional websites at competitive rates with ongoing support. We combine modern design standards with cultural sensitivity and local market knowledge to create websites that resonate with your audience.',
     },
     {
       question: 'How much does website development cost in Peshawar?',
@@ -205,7 +205,7 @@ export default function PeshawarLocation() {
                 {[
                   {
                     title: 'Regional Knowledge',
-                    desc: 'Deep understanding of Peshawar and KPK\'s business culture, trading practices, and market dynamics.',
+                    desc: 'Deep understanding of Peshawar and KPK&apos;s business culture, trading practices, and market dynamics.',
                     icon: 'solar:map-point-linear',
                   },
                   {
