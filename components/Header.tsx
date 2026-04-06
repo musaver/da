@@ -32,10 +32,17 @@ export default function Header() {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto gap-2 p-1 bg-light rounded-pill">
                   <li className="nav-item">
-                    <Link className="nav-link py-2 px-3 rounded-pill fw-medium" href="/#about">About Us</Link>
+                    <Link className="nav-link py-2 px-3 rounded-pill fw-medium" href="/about-us">About Us</Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link scroll-link py-2 px-3 rounded-pill fw-medium" href="/#services">Services</a>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link py-2 px-3 rounded-pill fw-medium dropdown-toggle" href="/#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul className="dropdown-menu">
+                      <li><Link className="dropdown-item" href="/services/brand-strategy">Brand Strategy</Link></li>
+                      <li><Link className="dropdown-item" href="/services/digital-marketing">Digital Marketing</Link></li>
+                      <li><Link className="dropdown-item" href="/services/ui-ux-design">UI/UX Design</Link></li>
+                      <li><Link className="dropdown-item" href="/services/shopify-development">Shopify Development</Link></li>
+                      <li><Link className="dropdown-item" href="/services/web-app-development">Web & App Development</Link></li>
+                    </ul>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link scroll-link py-2 px-3 rounded-pill fw-medium" href="/#work">Work</a>
@@ -77,16 +84,23 @@ export default function Header() {
                 <Link className="nav-link text-dark fw-medium px-2" href="/about-us">About Us</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="#services">Services</a>
+                <a className="nav-link text-dark fw-medium px-2" href="/#services">Services</a>
+                <ul className="list-unstyled ps-3">
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/services/brand-strategy">Brand Strategy</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/services/digital-marketing">Digital Marketing</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/services/ui-ux-design">UI/UX Design</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/services/shopify-development">Shopify Development</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/services/web-app-development">Web & App Development</Link></li>
+                </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="#work">Work</a>
+                <a className="nav-link text-dark fw-medium px-2" href="/#work">Work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="#team">Team</a>
+                <a className="nav-link text-dark fw-medium px-2" href="/#team">Team</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="#pricing">Pricing</a>
+                <a className="nav-link text-dark fw-medium px-2" href="/#pricing">Pricing</a>
               </li>
             </ul>
             <div className="d-flex flex-column">

@@ -4,7 +4,7 @@ import "../styles/globals.scss";
 import "aos/dist/aos.css";
 import Script from "next/script";
 import ClientScripts from "@/components/ClientScripts";
-import { organizationSchema, websiteSchema } from "@/lib/structured-data";
+import { organizationSchema, websiteSchema, faqSchema, localBusinessSchema } from "@/lib/structured-data";
 
 const interTight = Inter_Tight({
   subsets: ['latin'],
@@ -33,16 +33,26 @@ export const metadata: Metadata = {
   description:
     "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
   keywords: [
-    "web design agency",
-    "web development company",
-    "custom website design",
-    "startup branding",
-    "digital agency",
-    "UI/UX design",
-    "responsive web design",
+    "web design agency Pakistan",
+    "web development company Pakistan",
+    "web design Islamabad",
+    "web development Islamabad",
+    "custom website design Pakistan",
+    "best web design agency in Pakistan",
+    "digital marketing agency Pakistan",
+    "UI/UX design services Pakistan",
+    "Shopify development Pakistan",
+    "mobile app development Pakistan",
+    "ecommerce website Pakistan",
+    "SEO services Pakistan",
+    "startup branding Pakistan",
     "Dev Aspire",
-    "web design Pakistan",
-    "software development",
+    "software development company Islamabad",
+    "responsive web design Pakistan",
+    "brand strategy Pakistan",
+    "WordPress development Pakistan",
+    "React Next.js development Pakistan",
+    "affordable web design Pakistan",
   ],
   authors: [{ name: "Dev Aspire" }],
   creator: "Dev Aspire",
@@ -105,6 +115,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
         {children}
         <ClientScripts />

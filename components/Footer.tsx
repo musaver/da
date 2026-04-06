@@ -37,17 +37,22 @@ export default function Footer() {
             </div>
             <div className="col-md-4 col-lg-2 mb-11 mb-lg-0">
               <div className="d-flex flex-column gap-3">
-                <h6 className="mb-0">Sitemap</h6>
+                <h6 className="mb-0">Services</h6>
                 <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
-                  <li><Link className="link-hover text-body" href="/contact">Contact us</Link></li>
-                  <li><Link className="link-hover text-body" href="/about-us">About us</Link></li>
+                  <li><Link className="link-hover text-body" href="/services/brand-strategy">Brand Strategy</Link></li>
+                  <li><Link className="link-hover text-body" href="/services/digital-marketing">Digital Marketing</Link></li>
+                  <li><Link className="link-hover text-body" href="/services/ui-ux-design">UI/UX Design</Link></li>
+                  <li><Link className="link-hover text-body" href="/services/shopify-development">Shopify Development</Link></li>
+                  <li><Link className="link-hover text-body" href="/services/web-app-development">Web & App Development</Link></li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-4 col-lg-3 mb-11 mb-lg-0">
+            <div className="col-md-4 col-lg-2 mb-11 mb-lg-0">
               <div className="d-flex flex-column gap-3">
-                <h6 className="mb-0">Other Pages</h6>
+                <h6 className="mb-0">Company</h6>
                 <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
+                  <li><Link className="link-hover text-body" href="/about-us">About Us</Link></li>
+                  <li><Link className="link-hover text-body" href="/contact">Contact Us</Link></li>
                   <li><Link className="link-hover text-body" href="/terms-and-conditions">Terms & Conditions</Link></li>
                   <li><Link className="link-hover text-body" href="/privacy-policy">Privacy Policy</Link></li>
                 </ul>
