@@ -242,10 +242,6 @@ export default function FAQ() {
                         <span className="btn-text">Contact Us</span>
                         <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
                       </Link>
-                      <a href="mailto:hello@devaspire.com" className="btn btn-outline-dark">
-                        <span className="btn-text">Email Us Directly</span>
-                        <iconify-icon icon="solar:letter-linear" className="btn-icon bg-dark text-white round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
-                      </a>
                     </div>
                   </div>
                 </div>
