@@ -77,19 +77,23 @@ export default function LahoreLocation() {
               <h2 className="mb-0 text-center" data-aos="fade-up">
                 Why Lahore Businesses Choose <em className="font-instrument">Dev Aspire</em>
               </h2>
-              <div className="row">
+              <div className="row g-4 g-lg-5">
                 {[
-                  { icon: 'solar:palette-2-linear', title: 'Creative Excellence', desc: 'We match Lahore&apos;s creative spirit with innovative designs and modern development techniques that make your brand stand out.' },
+                  { icon: 'solar:palette-linear', title: 'Creative Excellence', desc: 'We match Lahore&apos;s creative spirit with innovative designs and modern development techniques that make your brand stand out.' },
                   { icon: 'solar:diploma-linear', title: 'EdTech & Education', desc: 'Specialized expertise in building platforms for Lahore&apos;s thriving education sector, from schools to online learning platforms.' },
                   { icon: 'solar:money-bag-linear', title: 'Fashion & E-Commerce', desc: 'Perfect solutions for Lahore&apos;s fashion industry with beautiful e-commerce stores that showcase your products.' },
                   { icon: 'solar:cpu-bolt-linear', title: 'Tech Startups', desc: 'Supporting Lahore&apos;s growing startup ecosystem with scalable web and mobile applications built for growth.' },
                 ].map((item, idx) => (
-                  <div key={idx} className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
-                    <div className="card h-100">
-                      <div className="card-body d-flex flex-column gap-3">
-                        <iconify-icon icon={item.icon} className="fs-9 text-primary"></iconify-icon>
-                        <h4 className="mb-0">{item.title}</h4>
-                        <p className="mb-0">{item.desc}</p>
+                  <div key={idx} className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
+                    <div className="card h-100 border-0 shadow-sm transition-all">
+                      <div className="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                        <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary" style={{ width: '56px', height: '56px' }}>
+                          <iconify-icon icon={item.icon} style={{ fontSize: '28px' }}></iconify-icon>
+                        </div>
+                        <div className="d-flex flex-column gap-2">
+                          <h4 className="mb-0 fw-semibold">{item.title}</h4>
+                          <p className="mb-0 text-muted fs-6">{item.desc}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -182,7 +186,7 @@ export default function LahoreLocation() {
               <h2 className="mb-0 text-center" data-aos="fade-up">
                 Industries We Serve in <em className="font-instrument">Lahore</em>
               </h2>
-              <div className="row">
+              <div className="row g-4 g-lg-5">
                 {[
                   { icon: 'solar:diploma-linear', title: 'Education & EdTech', desc: 'Learning platforms for Lahore&apos;s schools, universities, and online education startups.' },
                   { icon: 'solar:t-shirt-linear', title: 'Fashion & Apparel', desc: 'E-commerce websites for Lahore&apos;s fashion designers and clothing brands.' },
@@ -191,12 +195,16 @@ export default function LahoreLocation() {
                   { icon: 'solar:heart-pulse-linear', title: 'Healthcare', desc: 'Medical websites and appointment systems for Lahore&apos;s hospitals and clinics.' },
                   { icon: 'solar:rocket-2-linear', title: 'Tech Startups', desc: 'MVPs and scalable platforms for Lahore&apos;s growing startup ecosystem.' },
                 ].map((industry, idx) => (
-                  <div key={idx} className="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
-                    <div className="card h-100">
-                      <div className="card-body d-flex flex-column gap-3">
-                        <iconify-icon icon={industry.icon} className="fs-8 text-primary"></iconify-icon>
-                        <h4 className="mb-0">{industry.title}</h4>
-                        <p className="mb-0">{industry.desc}</p>
+                  <div key={idx} className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
+                    <div className="card h-100 border-0 shadow-sm hover-lift transition-all">
+                      <div className="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                        <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary" style={{ width: '56px', height: '56px' }}>
+                          <iconify-icon icon={industry.icon} style={{ fontSize: '28px' }}></iconify-icon>
+                        </div>
+                        <div className="d-flex flex-column gap-2">
+                          <h4 className="mb-0 fw-semibold">{industry.title}</h4>
+                          <p className="mb-0 text-muted fs-6">{industry.desc}</p>
+                        </div>
                       </div>
                     </div>
                   </div>

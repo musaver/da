@@ -192,6 +192,144 @@ export default function DigitalMarketing() {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Digital Marketing <em className="font-instrument">Packages</em>
+                  </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Affordable digital marketing services for Pakistani businesses. Choose a package that fits your budget and goals.
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-primary text-white mb-3">SEO Package</span>
+                        <h3 className="mb-0">PKR 50,000/mo</h3>
+                        <p className="text-muted mt-2 mb-0">Local SEO focused</p>
+                      </div>
+                      <p className="mb-0">Improve your Google rankings and get more organic traffic from Pakistani customers.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Keyword Research</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>On-Page Optimization</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Content Writing</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Local Citations</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Monthly Reports</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card h-100 bg-success border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-dark text-white mb-3">Social Media</span>
+                        <h3 className="mb-0 text-white">PKR 40,000/mo</h3>
+                        <p className="text-white text-opacity-75 mt-2 mb-0">Full management</p>
+                      </div>
+                      <p className="mb-0 text-white">Professional social media management for Facebook, Instagram, and LinkedIn.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3 text-white">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Content Creation</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">20 Posts/Month</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Community Management</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Performance Analytics</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">2 Platforms</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-info text-white mb-3">Paid Ads</span>
+                        <h3 className="mb-0">PKR 35,000/mo</h3>
+                        <p className="text-muted mt-2 mb-0">+ ad budget</p>
+                      </div>
+                      <p className="mb-0">Google Ads and Facebook Ads management to drive targeted traffic and sales.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Campaign Setup</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Ad Copy & Design</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>A/B Testing</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Conversion Tracking</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Weekly Optimization</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center" data-aos="fade-up" data-aos-delay="400">
+                <p className="mb-3"><strong>Need a custom digital marketing strategy?</strong> We create tailored plans combining SEO, social media, and paid ads based on your business goals.</p>
+                <Link href="/contact" className="btn btn-dark">
+                  <span className="btn-text">Request Custom Plan</span>
+                  <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Services */}
         <section className="py-10 py-lg-12 py-xl-13 bg-light">
           <div className="container">

@@ -202,7 +202,7 @@ export default function IslamabadLocation() {
                 </div>
               </div>
 
-              <div className="row g-4">
+              <div className="row g-4 g-lg-5">
                 {[
                   {
                     title: 'Local Expertise',
@@ -236,11 +236,15 @@ export default function IslamabadLocation() {
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay={idx * 100}>
-                    <div className="card h-100">
-                      <div className="card-body d-flex flex-column gap-3">
-                        <iconify-icon icon={item.icon} className="fs-1 text-primary"></iconify-icon>
-                        <h4 className="mb-0">{item.title}</h4>
-                        <p className="mb-0 text-muted">{item.desc}</p>
+                    <div className="card h-100 border-0 shadow-sm transition-all">
+                      <div className="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                        <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary" style={{ width: '56px', height: '56px' }}>
+                          <iconify-icon icon={item.icon} style={{ fontSize: '28px' }}></iconify-icon>
+                        </div>
+                        <div className="d-flex flex-column gap-2">
+                          <h4 className="mb-0 fw-semibold">{item.title}</h4>
+                          <p className="mb-0 text-muted fs-6">{item.desc}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -257,16 +261,25 @@ export default function IslamabadLocation() {
               <h2 className="mb-0 text-center" data-aos="fade-up">
                 Our Services in <em className="font-instrument">Islamabad</em>
               </h2>
-              <div className="row g-4">
+              <div className="row g-4 g-lg-5">
                 {services.map((service, idx) => (
                   <div key={idx} className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay={idx * 100}>
                     <Link href={service.link} className="text-decoration-none">
-                      <div className="card h-100 hover-lift">
-                        <div className="card-body d-flex flex-column gap-3">
-                          <iconify-icon icon={service.icon} className="fs-1 text-primary"></iconify-icon>
-                          <h4 className="mb-0">{service.title}</h4>
-                          <p className="mb-0 text-muted">{service.desc}</p>
-                          <span className="text-primary mt-auto">Learn More →</span>
+                      <div className="card h-100 border-0 shadow-sm hover-lift transition-all bg-white">
+                        <div className="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                          <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary" style={{ width: '56px', height: '56px' }}>
+                            <iconify-icon icon={service.icon} style={{ fontSize: '28px' }}></iconify-icon>
+                          </div>
+                          <div className="d-flex flex-column gap-2">
+                            <h4 className="mb-0 fw-semibold text-dark">{service.title}</h4>
+                            <p className="mb-0 text-muted fs-6">{service.desc}</p>
+                          </div>
+                          <div className="mt-auto">
+                            <span className="text-primary fw-medium d-inline-flex align-items-center gap-2">
+                              Learn More
+                              <iconify-icon icon="solar:arrow-right-linear" className="fs-6"></iconify-icon>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </Link>
@@ -284,14 +297,18 @@ export default function IslamabadLocation() {
               <h2 className="mb-0 text-center" data-aos="fade-up">
                 Industries We Serve in <em className="font-instrument">Islamabad</em>
               </h2>
-              <div className="row g-4">
+              <div className="row g-4 g-lg-5">
                 {industries.map((industry, idx) => (
                   <div key={idx} className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay={idx * 100}>
-                    <div className="card h-100">
-                      <div className="card-body d-flex flex-column gap-3">
-                        <iconify-icon icon={industry.icon} className="fs-1 text-primary"></iconify-icon>
-                        <h5 className="mb-0">{industry.name}</h5>
-                        <p className="mb-0 text-muted">{industry.desc}</p>
+                    <div className="card h-100 border-0 shadow-sm hover-lift transition-all">
+                      <div className="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                        <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary" style={{ width: '56px', height: '56px' }}>
+                          <iconify-icon icon={industry.icon} style={{ fontSize: '28px' }}></iconify-icon>
+                        </div>
+                        <div className="d-flex flex-column gap-2">
+                          <h5 className="mb-0 fw-semibold">{industry.name}</h5>
+                          <p className="mb-0 text-muted fs-6">{industry.desc}</p>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -195,6 +195,137 @@ export default function UIUXDesign() {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    UI/UX Design <em className="font-instrument">Pricing</em>
+                  </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Professional UI/UX design services for web and mobile applications. Clear pricing with no hidden costs.
+                  </p>
+                </div>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-info text-white mb-3">Website Design</span>
+                        <h3 className="mb-0">PKR 80,000+</h3>
+                        <p className="text-muted mt-2 mb-0">5-10 pages</p>
+                      </div>
+                      <p className="mb-0">Complete UI/UX design for your website with user research and prototyping.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>User Research</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Wireframes & Prototypes</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>High-Fidelity Mockups</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Responsive Design</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-info fs-5"></iconify-icon>
+                            <span>Design System</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card h-100 bg-info border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-dark text-white mb-3">Mobile App Design</span>
+                        <h3 className="mb-0 text-white">PKR 150,000+</h3>
+                        <p className="text-white text-opacity-75 mt-2 mb-0">iOS & Android</p>
+                      </div>
+                      <p className="mb-0 text-white">Complete mobile app UI/UX design for both iOS and Android platforms.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3 text-white">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">User Flow Mapping</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Interactive Prototypes</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Platform-Specific Design</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Usability Testing</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Developer Handoff</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-success text-white mb-3">SaaS Dashboard</span>
+                        <h3 className="mb-0">PKR 200,000+</h3>
+                        <p className="text-muted mt-2 mb-0">Complex applications</p>
+                      </div>
+                      <p className="mb-0">Design for complex SaaS products, admin panels, and enterprise applications.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Information Architecture</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Data Visualization</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Component Library</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Design Documentation</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Ongoing Support</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Services */}
         <section className="py-10 py-lg-12 py-xl-13">
           <div className="container">

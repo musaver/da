@@ -158,7 +158,7 @@ export default function KarachiLocation() {
               <h2 className="mb-0 text-center" data-aos="fade-up">
                 Industries We Serve in <em className="font-instrument">Karachi</em>
               </h2>
-              <div className="row g-4">
+              <div className="row g-4 g-lg-5">
                 {[
                   { icon: 'solar:cart-large-2-linear', title: 'E-Commerce & Retail', desc: 'Online stores for retailers from Saddar to Tariq Road.' },
                   { icon: 'solar:wallet-money-linear', title: 'Finance & FinTech', desc: 'Secure platforms for financial services and startups.' },
@@ -168,11 +168,15 @@ export default function KarachiLocation() {
                   { icon: 'solar:shop-2-linear', title: 'Manufacturing', desc: 'B2B platforms for SITE and Korangi industries.' },
                 ].map((industry, idx) => (
                   <div key={idx} className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
-                    <div className="card h-100 border-0">
-                      <div className="card-body d-flex flex-column gap-3">
-                        <iconify-icon icon={industry.icon} className="fs-1 text-primary"></iconify-icon>
-                        <h5 className="mb-0">{industry.title}</h5>
-                        <p className="mb-0 text-muted">{industry.desc}</p>
+                    <div className="card h-100 border-0 shadow-sm hover-lift transition-all">
+                      <div className="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                        <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary" style={{ width: '56px', height: '56px' }}>
+                          <iconify-icon icon={industry.icon} style={{ fontSize: '28px' }}></iconify-icon>
+                        </div>
+                        <div className="d-flex flex-column gap-2">
+                          <h5 className="mb-0 fw-semibold">{industry.title}</h5>
+                          <p className="mb-0 text-muted fs-6">{industry.desc}</p>
+                        </div>
                       </div>
                     </div>
                   </div>

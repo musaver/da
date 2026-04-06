@@ -20,8 +20,7 @@ export default function Home() {
               </h1>
               <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div className="col-xl-6">
-                  <p className="text-center mb-0">At Dev Aspire, we help small startups tackle the world&apos;s biggest challenges with
-                    tailored solutions, guiding you from strategy to success in a competitive market.</p>
+                  <p className="text-center mb-0">Dev Aspire is the best web design agency in Pakistan, helping startups and enterprises with professional web development, mobile app development, and digital marketing solutions. From Karachi to Islamabad, we deliver world-class results at affordable pricing.</p>
                 </div>
               </div>
               <div className="d-md-flex align-items-center justify-content-center gap-10" data-aos="fade-up"
@@ -226,7 +225,7 @@ export default function Home() {
                       <div className="card bg-danger-subtle" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <div className="card-body d-flex flex-column gap-11">
                           <iconify-icon icon="solar:window-frame-linear" className="fs-9 text-danger"></iconify-icon>
-                          <h4 className="text-danger mb-0">Web & App<br />Development</h4>
+                          <h4 className="text-danger mb-0">Web & Mobile App<br />Development</h4>
                         </div>
                       </div>
                     </Link>
@@ -241,12 +240,12 @@ export default function Home() {
                       </div>
                       <div className="col-lg-8">
                         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end gap-7">
-                          <a href="#" className="btn btn-white">
+                          <a href="/contact" className="btn btn-white">
                             <span className="btn-text">Let&apos;s Collaborate</span>
                             <iconify-icon icon="solar:arrow-right-up-linear"
                               className="btn-icon bg-dark text-white round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
                           </a>
-                          <a href="#" className="btn btn-outline-light">
+                          <a href="/portfolio" className="btn btn-outline-light">
                             <span className="btn-text">View Portfolio</span>
                             <iconify-icon icon="solar:arrow-right-up-linear"
                               className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
@@ -419,10 +418,12 @@ export default function Home() {
           <div className="container">
             <div className="d-flex flex-column gap-10 gap-lg-12">
               <div className="row justify-content-center">
-                <div className="col-lg-6 col-xl-5">
-                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Pick the
-                    plan that fits your <em className="font-instrument">start-up</em>
+                <div className="col-lg-8 col-xl-6">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Affordable Web Design & Development <em className="font-instrument">Packages</em>
                   </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Transparent pricing with no hidden charges. From basic websites to complete mobile app development solutions for Pakistani businesses.
+                  </p>
                 </div>
               </div>
               <div className="row border-md-none">
@@ -433,12 +434,12 @@ export default function Home() {
                         <div className="col-md-6 border-end border-dark border-opacity-10">
                           <div className="d-flex flex-column gap-5">
                             <div className="d-flex flex-column gap-7">
-                              <span className="badge text-bg-dark fs-4 w-fit">Starter</span>
-                              <p className="mb-0 text-muted">Perfect for startups needing a basic web application with essential features</p>
+                              <span className="badge text-bg-dark fs-4 w-fit">Starter Package</span>
+                              <p className="mb-0 text-black">Perfect for small businesses and startups. Professional web design with responsive layout, SEO optimization, and modern features. Cost-effective solution starting at just PKR 350,000.</p>
                             </div>
                             <div className="d-flex flex-column gap-7">
-                              <h2 className="mb-0">$2500</h2>
-                              <a href="#" className="btn btn-white">
+                              <h2 className="mb-0 fs-9">PKR 350,000</h2>
+                              <a href="/contact" className="btn btn-white">
                                 <span className="btn-text">Let&apos;s Collaborate</span>
                                 <iconify-icon icon="solar:arrow-right-up-linear"
                                   className="btn-icon bg-dark text-white round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
@@ -470,12 +471,12 @@ export default function Home() {
                         <div className="col-md-6 border-end border-white border-opacity-10">
                           <div className="d-flex flex-column gap-5">
                             <div className="d-flex flex-column gap-7">
-                              <span className="badge text-bg-dark fs-4 w-fit">Pro</span>
-                              <p className="mb-0 text-white">Complete solution with Mobile App + Web App for scaling businesses</p>
+                              <span className="badge text-bg-dark fs-4 w-fit">Pro Package</span>
+                              <p className="mb-0 text-white">Complete mobile app development (iOS & Android) + advanced web application. Perfect for e-commerce businesses, SaaS startups, and scaling enterprises. Includes payment gateway integration and cloud deployment.</p>
                             </div>
                             <div className="d-flex flex-column gap-7">
-                              <h2 className="mb-0 text-white">$5000+</h2>
-                              <a href="#" className="btn btn-white">
+                              <h2 className="mb-0 text-white fs-9">PKR 700,000+</h2>
+                              <a href="/contact" className="btn btn-white">
                                 <span className="btn-text">Let&apos;s Collaborate</span>
                                 <iconify-icon icon="solar:arrow-right-up-linear"
                                   className="btn-icon bg-dark text-white round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
@@ -518,12 +519,14 @@ export default function Home() {
               </div>
               <div className="accordion accordion-flush d-flex flex-column gap-3" id="accordionExample">
                 {[
-                  { id: 'One', question: 'What services does Dev Aspire Agency offer?', answer: 'Dev Aspire provides a complete range of digital solutions including web design, web development, e-commerce website creation, and SEO optimization.', expanded: true },
-                  { id: 'Two', question: 'How long does a typical project take?', answer: 'Project timelines depend on the scope and complexity of your website or service requirements. A standard website usually takes 2-4 weeks, while larger projects such as e-commerce stores or SEO campaigns may take longer.', expanded: false },
-                  { id: 'Three', question: 'How is pricing structured at Dev Aspire Agency?', answer: 'Dev Aspire offers flexible and transparent pricing packages tailored to your business needs. There are no hidden charges - you can choose from ready-made plans or request a customized quote depending on your project size, design complexity, and features required.', expanded: false },
-                  { id: 'Four', question: 'Do you offer ongoing support after project completion?', answer: 'Yes, absolutely. Dev Aspire believes in long-term partnerships. We provide post-launch support, including website maintenance, SEO updates, and technical assistance to ensure your site runs smoothly even after delivery.', expanded: false },
-                  { id: 'Five', question: 'How often will I receive updates on my project?', answer: "You'll receive regular progress updates throughout every phase of your project. Our team communicates closely via email or chat and shares milestones at each development stage - from design mockups to final testing - so you're always informed.", expanded: false },
-                  { id: 'Six', question: 'What makes Dev Aspire different from other agencies?', answer: 'Dev Aspire stands out because of its dedicated team, personalized approach, and focus on quality. With years of experience and global clients, we ensure every project is built using modern tools, we help your business grow online.', expanded: false }
+                  { id: 'One', question: 'What services does Dev Aspire Agency offer?', answer: 'Dev Aspire provides a complete range of digital solutions including web design, web development, mobile app development (iOS & Android), e-commerce website creation, Shopify development, UI/UX design, and digital marketing services across Pakistan.', expanded: true },
+                  { id: 'Two', question: 'How much does a website cost in Pakistan?', answer: 'Website development costs vary based on complexity. A basic business website starts from PKR 150,000-250,000. E-commerce websites range from PKR 300,000-800,000. Custom web applications start from $2,500. Mobile app development starts from $5,000. We provide transparent quotes with no hidden charges.', expanded: false },
+                  { id: 'Three', question: 'Do you offer affordable web design packages for startups?', answer: 'Yes! We offer cost-effective web design packages specifically for Pakistani startups and small businesses. Our Starter Package ($2,500) includes responsive design, SEO optimization, admin dashboard, and 30 days support - perfect for businesses launching their first website.', expanded: false },
+                  { id: 'Four', question: 'What is included in your e-commerce website packages?', answer: 'Our e-commerce solutions include product catalog management, shopping cart, payment gateway integration (JazzCash, Easypaisa, Stripe), order management, inventory tracking, shipping calculations, customer accounts, and mobile-responsive design. Pricing starts from PKR 300,000 for Shopify stores.', expanded: false },
+                  { id: 'Five', question: 'Do you provide mobile app development services?', answer: 'Yes! We develop native iOS and Android mobile apps, as well as cross-platform solutions. Our Pro Package includes both mobile app and web application development, with features like push notifications, payment integration, real-time updates, and cloud deployment.', expanded: false },
+                  { id: 'Six', question: 'How is pricing structured at Dev Aspire?', answer: 'We offer transparent, flexible pricing with no hidden charges. Choose from our Starter Package ($2,500) for basic websites or Pro Package ($5,000+) for mobile + web solutions. For custom requirements, we provide detailed quotes based on your specific needs, features, and timeline.', expanded: false },
+                  { id: 'Seven', question: 'Do you offer ongoing support and maintenance?', answer: 'Yes! We provide post-launch support including website maintenance, security updates, SEO optimization, bug fixes, and technical assistance. Maintenance packages start from PKR 15,000/month. Our Starter Package includes 30 days support, and Pro Package includes 90 days maintenance.', expanded: false },
+                  { id: 'Eight', question: 'What makes Dev Aspire the best web design agency in Pakistan?', answer: 'Dev Aspire stands out with 10+ years experience, 40+ successful projects, modern tech stack (React, Next.js), affordable pricing, on-time delivery, and dedicated support. We understand the Pakistani market while delivering international quality standards from Islamabad to Karachi.', expanded: false }
                 ].map((faq, idx) => (
                   <div key={idx} className="accordion-item border rounded-1 position-relative overflow-hidden" data-aos="fade-up"
                     data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">
@@ -560,8 +563,8 @@ export default function Home() {
                 {[
                   { icon: 'solar:shield-check-linear', title: 'Trusted by 40+ Businesses', desc: 'From Islamabad to Karachi, startups and established companies trust Dev Aspire for reliable, high-quality web design and development services across Pakistan.' },
                   { icon: 'solar:clock-circle-linear', title: 'On-Time Project Delivery', desc: 'We follow agile methodology with clear milestones, ensuring your website or app is delivered on time and within budget every single time.' },
-                  { icon: 'solar:hand-money-linear', title: 'Affordable Pricing for Pakistan', desc: 'Get world-class web design and development at competitive rates tailored for the Pakistani market. No hidden charges, transparent pricing from day one.' },
-                  { icon: 'solar:code-square-linear', title: 'Modern Tech Stack', desc: 'We build with React, Next.js, Node.js, and other cutting-edge technologies that ensure your website is fast, secure, and future-proof.' },
+                  { icon: 'solar:hand-money-linear', title: 'Affordable Web Design Packages', desc: 'Get professional website development starting from PKR 150,000 and mobile app development from $5,000. Transparent pricing with no hidden charges, payment plans available for Pakistani businesses.' },
+                  { icon: 'solar:code-square-linear', title: 'Modern Tech Stack', desc: 'We build with React, Next.js, Node.js for web development, React Native and Flutter for mobile apps, and Shopify for e-commerce. Cutting-edge technologies that ensure your website and apps are fast, secure, and scalable.' },
                   { icon: 'solar:headphones-round-sound-linear', title: 'Dedicated Support & Maintenance', desc: 'Our relationship doesn\'t end at launch. We provide ongoing website maintenance, SEO updates, and technical support to keep your business growing online.' },
                   { icon: 'solar:global-linear', title: 'Local Expertise, Global Standards', desc: 'Based in Islamabad, we understand the Pakistani market while delivering designs and code that meet international quality standards.' },
                 ].map((item, idx) => (

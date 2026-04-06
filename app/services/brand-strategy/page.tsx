@@ -197,6 +197,137 @@ export default function BrandStrategy() {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Brand Strategy <em className="font-instrument">Pricing</em>
+                  </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Professional brand identity and strategy services for startups and established businesses in Pakistan.
+                  </p>
+                </div>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-secondary text-white mb-3">Logo Design</span>
+                        <h3 className="mb-0">PKR 30,000+</h3>
+                        <p className="text-muted mt-2 mb-0">Quick start</p>
+                      </div>
+                      <p className="mb-0">Professional logo design with multiple concepts and unlimited revisions.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-secondary fs-5"></iconify-icon>
+                            <span>3 Logo Concepts</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-secondary fs-5"></iconify-icon>
+                            <span>Unlimited Revisions</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-secondary fs-5"></iconify-icon>
+                            <span>Source Files</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-secondary fs-5"></iconify-icon>
+                            <span>All Formats</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-secondary fs-5"></iconify-icon>
+                            <span>1 Week Delivery</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card h-100 bg-secondary border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-dark text-white mb-3">Brand Identity</span>
+                        <h3 className="mb-0 text-white">PKR 100,000+</h3>
+                        <p className="text-white text-opacity-75 mt-2 mb-0">Complete package</p>
+                      </div>
+                      <p className="mb-0 text-white">Full brand identity system with logo, colors, typography, and guidelines.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3 text-white">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Logo System</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Color Palette</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Typography System</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">Brand Guidelines</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-white fs-5"></iconify-icon>
+                            <span className="text-white">3 Weeks Delivery</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div>
+                        <span className="badge bg-primary text-white mb-3">Brand Strategy</span>
+                        <h3 className="mb-0">PKR 200,000+</h3>
+                        <p className="text-muted mt-2 mb-0">Full transformation</p>
+                      </div>
+                      <p className="mb-0">Complete brand strategy with positioning, messaging, and visual identity.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">Includes:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Market Research</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Brand Positioning</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Messaging Framework</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Complete Identity</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>6 Weeks Delivery</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Services */}
         <section className="py-10 py-lg-12 py-xl-13 bg-light">
           <div className="container">

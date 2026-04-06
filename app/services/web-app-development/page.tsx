@@ -193,6 +193,111 @@ export default function WebAppDevelopment() {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Transparent <em className="font-instrument">Pricing</em>
+                  </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    No hidden charges. Clear, upfront pricing for web and mobile app development services in Pakistan.
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <div className="card h-100 bg-primary-subtle border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div className="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span className="badge bg-primary text-white mb-3">Web Application</span>
+                          <h3 className="mb-0">Starting from $2,500</h3>
+                          <p className="text-muted mt-2 mb-0">PKR 150,000 - 400,000</p>
+                        </div>
+                      </div>
+                      <p className="mb-0">Professional web application development with responsive design, modern tech stack, and scalable architecture.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">What&apos;s Included:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Custom UI/UX Design</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Responsive Development</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Database Integration</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>Admin Dashboard</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-primary fs-5"></iconify-icon>
+                            <span>30 Days Support</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card h-100 bg-success-subtle border-0">
+                    <div className="card-body d-flex flex-column gap-4 p-5">
+                      <div className="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span className="badge bg-success text-white mb-3">Mobile + Web</span>
+                          <h3 className="mb-0">Starting from $5,000</h3>
+                          <p className="text-muted mt-2 mb-0">PKR 600,000 - 1,500,000</p>
+                        </div>
+                      </div>
+                      <p className="mb-0">Complete mobile app (iOS & Android) and web application development for businesses ready to scale.</p>
+                      <div className="mt-auto">
+                        <h6 className="mb-3">What&apos;s Included:</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Native iOS & Android Apps</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Web Application</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Push Notifications</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>Payment Integration</span>
+                          </li>
+                          <li className="d-flex gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" className="text-success fs-5"></iconify-icon>
+                            <span>90 Days Maintenance</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center" data-aos="fade-up" data-aos-delay="300">
+                <p className="mb-3"><strong>Need a custom quote?</strong> Every project is unique. We provide detailed estimates based on your specific requirements, features, and timeline.</p>
+                <Link href="/contact" className="btn btn-dark">
+                  <span className="btn-text">Get Custom Quote</span>
+                  <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Services */}
         <section className="py-10 py-lg-12 py-xl-13 bg-light">
           <div className="container">

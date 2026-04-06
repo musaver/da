@@ -27,11 +27,11 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Dev Aspire Agency | Web Design & Development Company",
+    default: "Best Web Design Agency Pakistan | Dev Aspire - Affordable Website & Mobile App Development",
     template: "%s | Dev Aspire",
   },
   description:
-    "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
+    "Dev Aspire is the best web design and development agency in Pakistan. Affordable website design from PKR 150,000, mobile app development from $5,000. Professional services in Karachi, Lahore, Islamabad. Custom web solutions, e-commerce, Shopify, and digital marketing.",
   keywords: [
     "web design agency Pakistan",
     "web development company Pakistan",
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Dev Aspire",
-    title: "Dev Aspire Agency | Web Design & Development Company",
+    title: "Best Web Design Agency Pakistan | Affordable Website & Mobile App Development",
     description:
-      "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
+      "Best web design agency in Pakistan offering affordable website design (PKR 150,000+) and mobile app development ($5,000+). Professional services in Karachi, Lahore, Islamabad.",
     images: [
       {
         url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
@@ -90,9 +90,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dev Aspire Agency | Web Design & Development Company",
+    title: "Best Web Design Agency Pakistan | Affordable Website & App Development",
     description:
-      "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
+      "Best web design agency in Pakistan. Affordable website design from PKR 150,000, mobile app development from $5,000. Professional services across Pakistan.",
     images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
   },
   alternates: {
