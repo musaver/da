@@ -4,6 +4,7 @@ import "../styles/globals.scss";
 import "aos/dist/aos.css";
 import Script from "next/script";
 import ClientScripts from "@/components/ClientScripts";
+import { organizationSchema, websiteSchema } from "@/lib/structured-data";
 
 const interTight = Inter_Tight({
   subsets: ['latin'],
@@ -21,11 +22,71 @@ const instrumentSerif = Instrument_Serif({
   display: 'swap',
 });
 
+const SITE_URL = 'https://devaspire.co';
+
 export const metadata: Metadata = {
-  title: "Dev Aspire Agency",
-  description: "Building bold brands with thoughtful design",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Dev Aspire Agency | Web Design & Development Company",
+    template: "%s | Dev Aspire",
+  },
+  description:
+    "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
+  keywords: [
+    "web design agency",
+    "web development company",
+    "custom website design",
+    "startup branding",
+    "digital agency",
+    "UI/UX design",
+    "responsive web design",
+    "Dev Aspire",
+    "web design Pakistan",
+    "software development",
+  ],
+  authors: [{ name: "Dev Aspire" }],
+  creator: "Dev Aspire",
+  publisher: "Dev Aspire",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: "/assets/images/logos/favicon.svg",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: SITE_URL,
+    siteName: "Dev Aspire",
+    title: "Dev Aspire Agency | Web Design & Development Company",
+    description:
+      "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
+    images: [
+      {
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Dev Aspire - Web Design & Development Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dev Aspire Agency | Web Design & Development Company",
+    description:
+      "Dev Aspire is a leading web design and development agency helping startups build bold brands with thoughtful design, custom websites, and digital solutions.",
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 };
 
@@ -37,6 +98,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${interTight.variable} ${instrumentSerif.variable}`}>
       <body className={interTight.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         {children}
         <ClientScripts />
         

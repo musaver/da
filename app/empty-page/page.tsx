@@ -3,9 +3,38 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SignupForm from './SignupForm';
 
+const SITE_URL = 'https://devaspire.co';
+
 export const metadata = {
   title: "Get Started - Dev Aspire",
-  description: "Sign up and get started with Dev Aspire today.",
+  description:
+    "Sign up and get started with Dev Aspire today. Begin your journey to a custom-built website with our expert web design and development team.",
+  openGraph: {
+    type: "website" as const,
+    url: `${SITE_URL}/empty-page`,
+    siteName: "Dev Aspire",
+    title: "Get Started - Dev Aspire",
+    description:
+      "Sign up and get started with Dev Aspire today. Begin your journey to a custom-built website with our expert web design and development team.",
+    images: [
+      {
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Get Started with Dev Aspire",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Get Started - Dev Aspire",
+    description:
+      "Sign up and get started with Dev Aspire today. Begin your journey to a custom-built website with our expert web design and development team.",
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: {
+    canonical: `${SITE_URL}/empty-page`,
+  },
 };
 
 export default function EmptyPage() {

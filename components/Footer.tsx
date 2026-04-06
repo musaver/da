@@ -12,7 +12,7 @@ export default function Footer() {
                 <Link href="/" className="d-block">
                   <Image 
                     src="/assets/images/logos/logo-dark.svg" 
-                    alt="logo" 
+                    alt="Dev Aspire agency footer logo" 
                     className="img-fluid"
                     width={120}
                     height={40}

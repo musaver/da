@@ -2,9 +2,38 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 
+const SITE_URL = 'https://devaspire.co';
+
 export const metadata = {
   title: "Terms & Conditions - Dev Aspire",
-  description: "Read the official Terms and Conditions of Dev Aspire for all our web design and development services.",
+  description:
+    "Read the official Terms and Conditions of Dev Aspire covering all our web design, web development, and digital branding services agreements and policies.",
+  openGraph: {
+    type: "website" as const,
+    url: `${SITE_URL}/terms-and-conditions`,
+    siteName: "Dev Aspire",
+    title: "Terms & Conditions - Dev Aspire",
+    description:
+      "Read the official Terms and Conditions of Dev Aspire covering all our web design, web development, and digital branding services agreements and policies.",
+    images: [
+      {
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Dev Aspire Terms & Conditions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Terms & Conditions - Dev Aspire",
+    description:
+      "Read the official Terms and Conditions of Dev Aspire covering all our web design, web development, and digital branding services agreements and policies.",
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: {
+    canonical: `${SITE_URL}/terms-and-conditions`,
+  },
 };
 
 export default function TermsAndConditions() {

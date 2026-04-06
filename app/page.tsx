@@ -35,25 +35,25 @@ export default function Home() {
                     <li>
                       <a href="javascript:void(0)">
                         <Image src="/assets/images/profile/user-1.jpg" width={44} height={44}
-                          className="rounded-circle border border-2 border-white" alt="user-1" />
+                          className="rounded-circle border border-2 border-white" alt="Dev Aspire satisfied client" />
                       </a>
                     </li>
                     <li className="ms-n2">
                       <a href="javascript:void(0)">
                         <Image src="/assets/images/profile/user-2.jpg" width={44} height={44}
-                          className="rounded-circle border border-2 border-white" alt="user-2" />
+                          className="rounded-circle border border-2 border-white" alt="Dev Aspire happy customer testimonial" />
                       </a>
                     </li>
                     <li className="ms-n2">
                       <a href="javascript:void(0)">
                         <Image src="/assets/images/profile/user-3.jpg" width={44} height={44}
-                          className="rounded-circle border border-2 border-white" alt="user-3" />
+                          className="rounded-circle border border-2 border-white" alt="Dev Aspire client review" />
                       </a>
                     </li>
                     <li className="ms-n2">
                       <a href="javascript:void(0)">
                         <Image src="/assets/images/profile/user-4.jpg" width={44} height={44}
-                          className="rounded-circle border border-2 border-white" alt="user-4" />
+                          className="rounded-circle border border-2 border-white" alt="Dev Aspire trusted customer" />
                       </a>
                     </li>
                   </ul>
@@ -271,7 +271,7 @@ export default function Home() {
                     <div className="work d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}
                       data-aos-duration="1000">
                       <div className="work-img position-relative overflow-hidden rounded-1">
-                        <Image src={`/assets/images/work/work-img-${work.img}.jpg`} alt="work" className="img-fluid" width={600} height={400} />
+                        <Image src={`/assets/images/work/work-img-${work.img}.jpg`} alt={`${work.title} - web design project by Dev Aspire`} className="img-fluid" width={600} height={400} />
                         <div className="work-overlay">
                           <a href={work.url} target="_blank" rel="noopener noreferrer"
                             className="work-icon position-absolute top-0 end-0 bg-white m-8 round-50 rounded-circle hstack justify-content-center">
@@ -376,7 +376,7 @@ export default function Home() {
                           completely!</h3>
                       </div>
                       <div className="position-relative overflow-hidden rounded">
-                        <Image src="/assets/images/customer/customer-stories.jpg" alt="customer-stories"
+                        <Image src="/assets/images/customer/customer-stories.jpg" alt="Dev Aspire customer success stories and testimonials"
                           className="img-fluid w-100" width={400} height={300} />
                       </div>
                     </div>

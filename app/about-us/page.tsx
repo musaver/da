@@ -2,9 +2,38 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 
+const SITE_URL = 'https://devaspire.co';
+
 export const metadata = {
   title: "About Us - Dev Aspire",
-  description: "Learn about Dev Aspire, the leading web design and web development company in Pakistan",
+  description:
+    "Learn about Dev Aspire, the leading web design and web development agency in Pakistan. Discover our mission, team, and commitment to building bold brands.",
+  openGraph: {
+    type: "website" as const,
+    url: `${SITE_URL}/about-us`,
+    siteName: "Dev Aspire",
+    title: "About Us - Dev Aspire",
+    description:
+      "Learn about Dev Aspire, the leading web design and web development agency in Pakistan. Discover our mission, team, and commitment to building bold brands.",
+    images: [
+      {
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+        width: 1200,
+        height: 630,
+        alt: "About Dev Aspire - Web Design & Development Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "About Us - Dev Aspire",
+    description:
+      "Learn about Dev Aspire, the leading web design and web development agency in Pakistan. Discover our mission, team, and commitment to building bold brands.",
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: {
+    canonical: `${SITE_URL}/about-us`,
+  },
 };
 
 export default function AboutUs() {

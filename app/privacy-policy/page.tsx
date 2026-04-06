@@ -2,9 +2,38 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 
+const SITE_URL = 'https://devaspire.co';
+
 export const metadata = {
   title: "Privacy Policy - Dev Aspire",
-  description: "Read Dev Aspire's Privacy Policy to understand how we collect, use, and protect your personal information.",
+  description:
+    "Read Dev Aspire's Privacy Policy to understand how we collect, use, and protect your personal information when using our web design and development services.",
+  openGraph: {
+    type: "website" as const,
+    url: `${SITE_URL}/privacy-policy`,
+    siteName: "Dev Aspire",
+    title: "Privacy Policy - Dev Aspire",
+    description:
+      "Read Dev Aspire's Privacy Policy to understand how we collect, use, and protect your personal information when using our web design and development services.",
+    images: [
+      {
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Dev Aspire Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Privacy Policy - Dev Aspire",
+    description:
+      "Read Dev Aspire's Privacy Policy to understand how we collect, use, and protect your personal information when using our web design and development services.",
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: {
+    canonical: `${SITE_URL}/privacy-policy`,
+  },
 };
 
 export default function PrivacyPolicy() {

@@ -1,0 +1,14 @@
+import type { MetadataRoute } from 'next';
+
+const SITE_URL = 'https://devaspire.co';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/api/', '/empty-page/'],
+    },
+    sitemap: `${SITE_URL}/sitemap.xml`,
+  };
+}

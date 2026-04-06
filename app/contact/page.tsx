@@ -3,9 +3,38 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import IconifyIcon from '@/components/IconifyIcon';
 
+const SITE_URL = 'https://devaspire.co';
+
 export const metadata = {
   title: 'Contact - Dev Aspire',
-  description: 'Get in touch with Dev Aspire',
+  description:
+    'Get in touch with Dev Aspire for web design, development, and branding services. Request a free consultation and start building your next project today.',
+  openGraph: {
+    type: 'website' as const,
+    url: `${SITE_URL}/contact`,
+    siteName: 'Dev Aspire',
+    title: 'Contact - Dev Aspire',
+    description:
+      'Get in touch with Dev Aspire for web design, development, and branding services. Request a free consultation and start building your next project today.',
+    images: [
+      {
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+        width: 1200,
+        height: 630,
+        alt: 'Contact Dev Aspire - Web Design & Development Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image' as const,
+    title: 'Contact - Dev Aspire',
+    description:
+      'Get in touch with Dev Aspire for web design, development, and branding services. Request a free consultation and start building your next project today.',
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: {
+    canonical: `${SITE_URL}/contact`,
+  },
 };
 
 export default function Contact() {
@@ -20,9 +49,9 @@ export default function Contact() {
             <div className="d-flex flex-column gap-10 gap-lg-12">
               <div className="row justify-content-center">
                 <div className="col-lg-6 col-xl-5">
-                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <h1 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     Love to hear from you, Get in <em className="font-instrument">touch</em>
-                  </h2>
+                  </h1>
                 </div>
               </div>
               <div className="card">

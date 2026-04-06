@@ -14,7 +14,7 @@ export default function Header() {
                 <Image 
                   src="/assets/images/logos/logo-dark.svg" 
                   className="img-fluid" 
-                  alt="Logo" 
+                  alt="Dev Aspire - Web Design & Development Agency" 
                   width={160}
                   height={40}
                   priority
@@ -63,7 +63,7 @@ export default function Header() {
             <Image 
               src="/assets/images/logos/logo-dark.svg" 
               className="img-fluid" 
-              alt="Logo" 
+              alt="Dev Aspire - Web Design & Development Agency" 
               width={160}
               height={40}
             />
