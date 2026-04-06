@@ -35,7 +35,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-lg-2 mb-11 mb-lg-0">
+            <div className="col-6 col-md-3 col-lg-2 mb-11 mb-lg-0">
               <div className="d-flex flex-column gap-3">
                 <h6 className="mb-0">Services</h6>
                 <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
@@ -43,27 +43,62 @@ export default function Footer() {
                   <li><Link className="link-hover text-body" href="/services/digital-marketing">Digital Marketing</Link></li>
                   <li><Link className="link-hover text-body" href="/services/ui-ux-design">UI/UX Design</Link></li>
                   <li><Link className="link-hover text-body" href="/services/shopify-development">Shopify Development</Link></li>
-                  <li><Link className="link-hover text-body" href="/services/web-app-development">Web & App Development</Link></li>
+                  <li><Link className="link-hover text-body" href="/services/web-app-development">Web Development</Link></li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-4 col-lg-2 mb-11 mb-lg-0">
+            <div className="col-6 col-md-3 col-lg-2 mb-11 mb-lg-0">
+              <div className="d-flex flex-column gap-3">
+                <h6 className="mb-0">Industries</h6>
+                <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
+                  <li><Link className="link-hover text-body" href="/industries/ecommerce">E-Commerce</Link></li>
+                  <li><Link className="link-hover text-body" href="/industries/education">Education</Link></li>
+                  <li><Link className="link-hover text-body" href="/industries/healthcare">Healthcare</Link></li>
+                  <li><Link className="link-hover text-body" href="/industries/real-estate">Real Estate</Link></li>
+                  <li><Link className="link-hover text-body" href="/industries">All Industries</Link></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 col-lg-2 mb-11 mb-lg-0">
+              <div className="d-flex flex-column gap-3">
+                <h6 className="mb-0">Resources</h6>
+                <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
+                  <li><Link className="link-hover text-body" href="/portfolio">Portfolio</Link></li>
+                  <li><Link className="link-hover text-body" href="/blog">Blog</Link></li>
+                  <li><Link className="link-hover text-body" href="/faq">FAQ</Link></li>
+                  <li><Link className="link-hover text-body" href="/how-it-works">How It Works</Link></li>
+                  <li><Link className="link-hover text-body" href="/resources">All Resources</Link></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 col-lg-2 mb-11 mb-lg-0">
+              <div className="d-flex flex-column gap-3">
+                <h6 className="mb-0">Locations</h6>
+                <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
+                  <li><Link className="link-hover text-body" href="/location/karachi">Karachi</Link></li>
+                  <li><Link className="link-hover text-body" href="/location/lahore">Lahore</Link></li>
+                  <li><Link className="link-hover text-body" href="/location/islamabad">Islamabad</Link></li>
+                  <li><Link className="link-hover text-body" href="/location/rawalpindi">Rawalpindi</Link></li>
+                  <li><Link className="link-hover text-body" href="/locations">All Cities</Link></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3 mb-11 mb-lg-0">
               <div className="d-flex flex-column gap-3">
                 <h6 className="mb-0">Company</h6>
                 <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
                   <li><Link className="link-hover text-body" href="/about-us">About Us</Link></li>
                   <li><Link className="link-hover text-body" href="/contact">Contact Us</Link></li>
-                  <li><Link className="link-hover text-body" href="/terms-and-conditions">Terms & Conditions</Link></li>
-                  <li><Link className="link-hover text-body" href="/privacy-policy">Privacy Policy</Link></li>
+                  <li><a className="link-hover text-body" href="tel:03006825223">+92 300 6825223</a></li>
+                  <li><a className="link-hover text-body" href="mailto:hello@devaspire.com">hello@devaspire.com</a></li>
                 </ul>
-              </div>
-            </div>
-            <div className="col-md-4 col-lg-2 mb-11 mb-lg-0">
-              <div className="d-flex flex-column gap-3">
-                <h6 className="mb-0">Contact Details</h6>
-                <p className="mb-0">G9 Markaz, Islamabad, Pakistan</p>
-                <a href="mailto:hello@devaspire.agency">hello@devaspire.com</a>
-                <a href="tel:03006825223">0300 6825223</a>
+                <div className="d-flex flex-column gap-2 mt-3">
+                  <h6 className="mb-0 fs-4">Legal</h6>
+                  <ul className="footer-menu list-unstyled mb-0 d-flex flex-column gap-7">
+                    <li><Link className="link-hover text-body" href="/terms-and-conditions">Terms & Conditions</Link></li>
+                    <li><Link className="link-hover text-body" href="/privacy-policy">Privacy Policy</Link></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

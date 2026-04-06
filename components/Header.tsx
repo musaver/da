@@ -31,9 +31,6 @@ export default function Header() {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto gap-2 p-1 bg-light rounded-pill">
-                  <li className="nav-item">
-                    <Link className="nav-link py-2 px-3 rounded-pill fw-medium" href="/about-us">About Us</Link>
-                  </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link py-2 px-3 rounded-pill fw-medium dropdown-toggle" href="/#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                     <ul className="dropdown-menu">
@@ -44,14 +41,33 @@ export default function Header() {
                       <li><Link className="dropdown-item" href="/services/web-app-development">Web & App Development</Link></li>
                     </ul>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link scroll-link py-2 px-3 rounded-pill fw-medium" href="/#work">Work</a>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link py-2 px-3 rounded-pill fw-medium dropdown-toggle" href="/industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+                    <ul className="dropdown-menu">
+                      <li><Link className="dropdown-item" href="/industries">All Industries</Link></li>
+                      <li><hr className="dropdown-divider" /></li>
+                      <li><Link className="dropdown-item" href="/industries/ecommerce">E-Commerce</Link></li>
+                      <li><Link className="dropdown-item" href="/industries/education">Education</Link></li>
+                      <li><Link className="dropdown-item" href="/industries/healthcare">Healthcare</Link></li>
+                      <li><Link className="dropdown-item" href="/industries/real-estate">Real Estate</Link></li>
+                      <li><Link className="dropdown-item" href="/industries/finance">Finance & FinTech</Link></li>
+                      <li><Link className="dropdown-item" href="/industries/food-restaurant">Food & Restaurant</Link></li>
+                    </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link scroll-link py-2 px-3 rounded-pill fw-medium" href="/#team">Team</a>
+                    <Link className="nav-link py-2 px-3 rounded-pill fw-medium" href="/portfolio">Portfolio</Link>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link py-2 px-3 rounded-pill fw-medium dropdown-toggle" href="/resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                    <ul className="dropdown-menu">
+                      <li><Link className="dropdown-item" href="/blog">Blog</Link></li>
+                      <li><Link className="dropdown-item" href="/faq">FAQ</Link></li>
+                      <li><Link className="dropdown-item" href="/how-it-works">How It Works</Link></li>
+                      <li><Link className="dropdown-item" href="/resources">All Resources</Link></li>
+                    </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link scroll-link py-2 px-3 rounded-pill fw-medium" href="/#pricing">Pricing</a>
+                    <Link className="nav-link py-2 px-3 rounded-pill fw-medium" href="/about-us">About</Link>
                   </li>
                 </ul>
                 <div className="d-flex align-items-center">
@@ -81,9 +97,6 @@ export default function Header() {
           <div className="d-flex flex-column gap-4">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link text-dark fw-medium px-2" href="/about-us">About Us</Link>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link text-dark fw-medium px-2" href="/#services">Services</a>
                 <ul className="list-unstyled ps-3">
                   <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/services/brand-strategy">Brand Strategy</Link></li>
@@ -94,13 +107,28 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="/#work">Work</a>
+                <Link className="nav-link text-dark fw-medium px-2" href="/industries">Industries</Link>
+                <ul className="list-unstyled ps-3">
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/industries/ecommerce">E-Commerce</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/industries/education">Education</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/industries/healthcare">Healthcare</Link></li>
+                  <li><Link className="nav-link text-dark fw-normal px-2 py-1 fs-3" href="/industries/real-estate">Real Estate</Link></li>
+                </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="/#team">Team</a>
+                <Link className="nav-link text-dark fw-medium px-2" href="/portfolio">Portfolio</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark fw-medium px-2" href="/#pricing">Pricing</a>
+                <Link className="nav-link text-dark fw-medium px-2" href="/blog">Blog</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-dark fw-medium px-2" href="/locations">Locations</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-dark fw-medium px-2" href="/about-us">About Us</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-dark fw-medium px-2" href="/faq">FAQ</Link>
               </li>
             </ul>
             <div className="d-flex flex-column">

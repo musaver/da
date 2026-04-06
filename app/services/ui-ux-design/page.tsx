@@ -126,8 +126,129 @@ export default function UIUXDesign() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Tools & Technologies */}
         <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <h2 className="mb-0 text-center" data-aos="fade-up">
+                Design <em className="font-instrument">Tools We Use</em>
+              </h2>
+              <div className="row justify-content-center">
+                {[
+                  { tool: 'Figma', desc: 'Our primary design tool for creating responsive, collaborative, and interactive prototypes.' },
+                  { tool: 'Adobe XD', desc: 'Advanced prototyping and design system creation for complex enterprise applications.' },
+                  { tool: 'Sketch', desc: 'Vector design and UI toolkit for creating pixel-perfect interfaces on macOS.' },
+                  { tool: 'Principle', desc: 'Animation and micro-interaction design to bring interfaces to life with smooth transitions.' },
+                ].map((item, idx) => (
+                  <div key={idx} className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
+                    <div className="card h-100 text-center">
+                      <div className="card-body d-flex flex-column gap-3">
+                        <h3 className="mb-0 text-primary">{item.tool}</h3>
+                        <p className="mb-0">{item.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <div className="row justify-content-center">
+                <div className="col-lg-6 col-xl-4">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Frequently Asked <em className="font-instrument">Questions</em>
+                  </h2>
+                </div>
+              </div>
+              <div className="accordion accordion-flush d-flex flex-column gap-3" id="uiuxFAQ">
+                {[
+                  { id: 'One', question: 'How much does UI/UX design cost in Pakistan?', answer: 'UI/UX design costs vary based on complexity. Simple landing pages start from PKR 100,000, mobile app design from PKR 250,000, and complex SaaS product design from PKR 500,000+. We provide custom quotes based on your specific project requirements, timeline, and deliverables.', expanded: true },
+                  { id: 'Two', question: 'How long does a UI/UX design project take?', answer: 'Timelines depend on project scope. A landing page takes 1-2 weeks, a mobile app design 3-4 weeks, and a complete SaaS product 6-8 weeks. This includes research, wireframing, visual design, prototyping, and iterations based on your feedback.', expanded: false },
+                  { id: 'Three', question: 'Do you work with developers to implement the design?', answer: 'Yes! We provide complete design handoff with developer-ready files, design specifications, assets, and style guides. We also offer post-design support to work with your development team, ensuring the final product matches the design vision pixel-perfectly.', expanded: false },
+                  { id: 'Four', question: 'What is the difference between UI and UX design?', answer: 'UX (User Experience) focuses on how users interact with your product: research, flows, and structure. UI (User Interface) focuses on visual design: colors, typography, buttons, and aesthetics. We provide both: strategy-backed UX and beautiful UI that works together seamlessly.', expanded: false },
+                  { id: 'Five', question: 'Can you redesign my existing website or app?', answer: 'Absolutely! We specialize in redesigns. We analyze your current design, identify pain points through user research and analytics, and create a modernized, conversion-optimized design that improves user experience while maintaining your brand identity.', expanded: false },
+                  { id: 'Six', question: 'Do you conduct user research for Pakistani audiences?', answer: 'Yes, we conduct user research tailored to Pakistani markets including interviews, surveys, usability testing, and competitive analysis. We understand cultural nuances, user behaviors, and preferences across major cities like Karachi, Lahore, and Islamabad.', expanded: false },
+                  { id: 'Seven', question: 'What deliverables do I receive at the end?', answer: 'You receive high-fidelity designs in Figma, interactive prototypes, design system/style guide, all assets (icons, images) in multiple formats, design specifications for developers, and source files. We ensure you have everything needed for development and future updates.', expanded: false },
+                ].map((faq, idx) => (
+                  <div key={idx} className="accordion-item border rounded-1 position-relative overflow-hidden" data-aos="fade-up"
+                    data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">
+                    <h2 className="accordion-header">
+                      <button className={`accordion-button fs-7 fw-medium ${!faq.expanded ? 'collapsed' : ''}`} type="button" data-bs-toggle="collapse"
+                        data-bs-target={`#uiuxCollapse${faq.id}`} aria-expanded={faq.expanded} aria-controls={`uiuxCollapse${faq.id}`}>
+                        {faq.question}
+                      </button>
+                    </h2>
+                    <div id={`uiuxCollapse${faq.id}`} className={`accordion-collapse collapse ${faq.expanded ? 'show' : ''}`} data-bs-parent="#uiuxFAQ">
+                      <div className="accordion-body pt-0">
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Services */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                Related <em className="font-instrument">Services</em>
+              </h2>
+              <div className="row justify-content-center">
+                <div className="col-sm-6 col-md-4">
+                  <Link href="/services/web-app-development" className="text-decoration-none">
+                    <div className="card bg-danger-subtle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                      <div className="card-body d-flex flex-column gap-11">
+                        <iconify-icon icon="solar:window-frame-linear" className="fs-9 text-danger"></iconify-icon>
+                        <div>
+                          <h4 className="text-danger mb-2">Web Development</h4>
+                          <p className="mb-0 text-dark">Turn your designs into fully functional websites and web apps.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4">
+                  <Link href="/services/brand-strategy" className="text-decoration-none">
+                    <div className="card bg-secondary-subtle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                      <div className="card-body d-flex flex-column gap-11">
+                        <iconify-icon icon="solar:palette-round-linear" className="fs-9 text-secondary"></iconify-icon>
+                        <div>
+                          <h4 className="text-secondary mb-2">Brand Strategy</h4>
+                          <p className="mb-0 text-dark">Define your brand identity before designing your digital products.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4">
+                  <Link href="/services/digital-marketing" className="text-decoration-none">
+                    <div className="card bg-info-subtle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                      <div className="card-body d-flex flex-column gap-11">
+                        <iconify-icon icon="solar:gallery-wide-linear" className="fs-9 text-info"></iconify-icon>
+                        <div>
+                          <h4 className="text-info mb-2">Digital Marketing</h4>
+                          <p className="mb-0 text-dark">Drive traffic and conversions to your beautifully designed product.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
           <div className="container">
             <div className="get-in-touch position-relative overflow-hidden rounded-3 border px-4 py-5 py-lg-13 py-xl-14">
               <div className="row justify-content-center">

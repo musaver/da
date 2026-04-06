@@ -152,6 +152,99 @@ export default function WebAppDevelopment() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <div className="row justify-content-center">
+                <div className="col-lg-6 col-xl-4">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Frequently Asked <em className="font-instrument">Questions</em>
+                  </h2>
+                </div>
+              </div>
+              <div className="accordion accordion-flush d-flex flex-column gap-3" id="webAppFAQ">
+                {[
+                  { id: 'One', question: 'How much does web and app development cost in Pakistan?', answer: 'Costs vary by complexity. Basic websites start from PKR 200,000, mobile apps from PKR 500,000, and custom web applications from PKR 800,000+. SaaS products and enterprise solutions require custom quotes. We provide detailed proposals after understanding your requirements.', expanded: true },
+                  { id: 'Two', question: 'What technologies do you use for development?', answer: 'We use modern, battle-tested technologies: Next.js and React for web frontends, Node.js and Python for backends, React Native for mobile apps, PostgreSQL and MongoDB for databases. We choose technologies based on your project needs, scalability requirements, and long-term maintenance.', expanded: false },
+                  { id: 'Three', question: 'How long does it take to build a web or mobile app?', answer: 'Timelines depend on complexity. A simple website takes 3-4 weeks, a mobile app 8-12 weeks, and a complex SaaS product 4-6 months. We follow agile methodology with bi-weekly sprints, so you see progress regularly and can provide feedback throughout.', expanded: false },
+                  { id: 'Four', question: 'Do you provide ongoing maintenance and support?', answer: 'Yes! We offer maintenance packages including bug fixes, feature updates, security patches, performance monitoring, and technical support. Maintenance starts from PKR 50,000/month depending on your application complexity and support needs.', expanded: false },
+                  { id: 'Five', question: 'Can you work with my existing development team?', answer: 'Absolutely! We often collaborate with in-house teams. We can augment your team with specialized developers, handle specific features or modules, provide technical leadership, or conduct code reviews. We adapt to your development workflow and tools.', expanded: false },
+                  { id: 'Six', question: 'Do you build mobile apps for both iOS and Android?', answer: 'Yes, we build cross-platform apps using React Native that work on both iOS and Android with a single codebase. This is cost-effective and faster than building separate native apps. For performance-critical apps, we also offer native Swift (iOS) and Kotlin (Android) development.', expanded: false },
+                  { id: 'Seven', question: 'What happens after the app is launched?', answer: 'Post-launch, we monitor performance, fix any issues, gather user feedback, and plan iterative improvements. We handle app store submissions, server maintenance, and provide training for your team. You own all code and assets, and we're available for long-term support as your app grows.', expanded: false },
+                ].map((faq, idx) => (
+                  <div key={idx} className="accordion-item border rounded-1 position-relative overflow-hidden" data-aos="fade-up"
+                    data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">
+                    <h2 className="accordion-header">
+                      <button className={`accordion-button fs-7 fw-medium ${!faq.expanded ? 'collapsed' : ''}`} type="button" data-bs-toggle="collapse"
+                        data-bs-target={`#webAppCollapse${faq.id}`} aria-expanded={faq.expanded} aria-controls={`webAppCollapse${faq.id}`}>
+                        {faq.question}
+                      </button>
+                    </h2>
+                    <div id={`webAppCollapse${faq.id}`} className={`accordion-collapse collapse ${faq.expanded ? 'show' : ''}`} data-bs-parent="#webAppFAQ">
+                      <div className="accordion-body pt-0">
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Services */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                Related <em className="font-instrument">Services</em>
+              </h2>
+              <div className="row justify-content-center">
+                <div className="col-sm-6 col-md-4">
+                  <Link href="/services/ui-ux-design" className="text-decoration-none">
+                    <div className="card bg-light-orange" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                      <div className="card-body d-flex flex-column gap-11">
+                        <iconify-icon icon="solar:magic-stick-3-linear" className="fs-9 text-orange"></iconify-icon>
+                        <div>
+                          <h4 className="text-orange mb-2">UI/UX Design</h4>
+                          <p className="mb-0 text-dark">Design beautiful, user-friendly interfaces before development begins.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4">
+                  <Link href="/services/digital-marketing" className="text-decoration-none">
+                    <div className="card bg-info-subtle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                      <div className="card-body d-flex flex-column gap-11">
+                        <iconify-icon icon="solar:gallery-wide-linear" className="fs-9 text-info"></iconify-icon>
+                        <div>
+                          <h4 className="text-info mb-2">Digital Marketing</h4>
+                          <p className="mb-0 text-dark">Launch your app with SEO, ads, and marketing that drives downloads.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4">
+                  <Link href="/services/brand-strategy" className="text-decoration-none">
+                    <div className="card bg-secondary-subtle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                      <div className="card-body d-flex flex-column gap-11">
+                        <iconify-icon icon="solar:palette-round-linear" className="fs-9 text-secondary"></iconify-icon>
+                        <div>
+                          <h4 className="text-secondary mb-2">Brand Strategy</h4>
+                          <p className="mb-0 text-dark">Build a strong brand identity for your app or digital product.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-10 py-lg-12 py-xl-13">
           <div className="container">

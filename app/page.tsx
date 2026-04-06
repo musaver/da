@@ -619,6 +619,53 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Locations We Serve Section */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light" id="locations">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <div className="row justify-content-center">
+                <div className="col-lg-8 col-xl-6">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Serving Businesses Across <em className="font-instrument">Pakistan</em>
+                  </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    From Karachi to Peshawar, Dev Aspire provides web design, development, and digital marketing services to businesses throughout Pakistan. We understand local markets while delivering international quality.
+                  </h2>
+                </div>
+              </div>
+              <div className="row">
+                {[
+                  { city: 'Islamabad', desc: 'Capital city startups and enterprises', icon: 'solar:buildings-3-linear', color: 'primary' },
+                  { city: 'Karachi', desc: 'E-commerce and financial services', icon: 'solar:city-linear', color: 'info' },
+                  { city: 'Lahore', desc: 'Education and creative industries', icon: 'solar:diploma-linear', color: 'orange' },
+                  { city: 'Rawalpindi', desc: 'Business and retail sectors', icon: 'solar:shop-linear', color: 'success' },
+                  { city: 'Faisalabad', desc: 'Manufacturing and textile businesses', icon: 'solar:widget-add-linear', color: 'secondary' },
+                  { city: 'Multan', desc: 'Agriculture and logistics companies', icon: 'solar:delivery-linear', color: 'danger' },
+                  { city: 'Peshawar', desc: 'Trade and service providers', icon: 'solar:hand-shake-linear', color: 'primary' },
+                  { city: 'Quetta', desc: 'Mining and energy sector', icon: 'solar:bolt-circle-linear', color: 'warning' },
+                ].map((location, idx) => (
+                  <div key={idx} className="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 50} data-aos-duration="1000">
+                    <div className={`card bg-${location.color}-subtle h-100`}>
+                      <div className="card-body d-flex flex-column align-items-center text-center gap-3 py-5">
+                        <iconify-icon icon={location.icon} className={`fs-8 text-${location.color}`}></iconify-icon>
+                        <div>
+                          <h4 className={`mb-1 text-${location.color}`}>{location.city}</h4>
+                          <p className="mb-0 fs-4 text-muted">{location.desc}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <p className="mb-0">
+                  <strong>Remote Collaboration:</strong> No matter where you&apos;re located in Pakistan, we work seamlessly with businesses through video calls, project management tools, and regular updates to deliver exceptional results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* How We Work Section */}
         <section className="py-10 py-lg-12 py-xl-13 bg-dark" id="process">
           <div className="container">

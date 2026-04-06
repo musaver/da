@@ -170,3 +170,101 @@ export function serviceSchema(name: string, description: string) {
     },
   };
 }
+
+export function blogListingSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: `${BRAND_NAME} Blog`,
+    description: 'Expert insights on web design, development, and digital marketing for businesses in Pakistan.',
+    url: `${SITE_URL}/blog`,
+    publisher: {
+      '@type': 'Organization',
+      name: BRAND_NAME,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+      },
+    },
+  };
+}
+
+export function articleSchema(
+  title: string,
+  description: string,
+  slug: string,
+  publishedDate: string,
+  modifiedDate: string,
+  authorName: string,
+  imageUrl?: string,
+  keywords?: string[]
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: imageUrl || `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+    datePublished: publishedDate,
+    dateModified: modifiedDate,
+    author: {
+      '@type': 'Person',
+      name: authorName,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: BRAND_NAME,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/assets/images/logos/logo-dark.svg`,
+      },
+    },
+    keywords: keywords?.join(', '),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/blog/${slug}`,
+    },
+  };
+}
+
+export function locationServiceSchema(cityName: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Web Design and Development',
+    provider: {
+      '@type': 'Organization',
+      name: BRAND_NAME,
+      url: SITE_URL,
+    },
+    areaServed: {
+      '@type': 'City',
+      name: cityName,
+      addressCountry: 'PK',
+    },
+  };
+}
+
+export function caseStudySchema(
+  title: string,
+  description: string,
+  client: string,
+  industry: string,
+  url?: string
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: title,
+    description: description,
+    author: {
+      '@type': 'Organization',
+      name: BRAND_NAME,
+    },
+    about: {
+      '@type': 'Thing',
+      name: industry,
+    },
+    url: url || SITE_URL,
+  };
+}

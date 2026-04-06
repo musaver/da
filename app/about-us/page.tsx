@@ -52,6 +52,28 @@ export default function AboutUs() {
           </div>
         </section>
 
+        {/* Company Stats */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
+          <div className="container">
+            <div className="row">
+              {[
+                { stat: '10+', label: 'Years of Excellence', desc: 'Serving businesses since 2015' },
+                { stat: '40+', label: 'Projects Completed', desc: 'Across Pakistan and internationally' },
+                { stat: '30+', label: 'Happy Clients', desc: 'Building long-term partnerships' },
+                { stat: '10+', label: 'Team Members', desc: 'Experts in design and development' },
+              ].map((item, idx) => (
+                <div key={idx} className="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
+                  <div className="text-center">
+                    <h2 className="mb-2 fs-11 text-primary">{item.stat}</h2>
+                    <h5 className="mb-1">{item.label}</h5>
+                    <p className="mb-0 text-muted">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* About Us Section */}
         <section className="py-10 py-lg-12 py-xl-13">
           <div className="container">
@@ -62,68 +84,115 @@ export default function AboutUs() {
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                       <h2 className="mb-4">About Us</h2>
                       <p className="mb-0 fs-5">
-                        Dev Aspire is the leading web design and web development company in Pakistan. Our team is dedicated to developing intuitive, bespoke websites. We have a team of professional web designers that have the modern knowledge and technologies to help our customers improve their online business.
+                        Dev Aspire is a leading web design and development company based in Islamabad, Pakistan, serving businesses locally and internationally since 2015. Our team of passionate designers, developers, and marketers is dedicated to creating digital experiences that drive growth and deliver measurable results.
                       </p>
                       <p className="mb-0 fs-5 mt-4">
-                        At Dev Aspire you will get the web design, ecommerce, SEO and optimization solutions and strategies that have been proven by experts. We are providing the expert services in Islamabad, Pakistan and Waterloo, Toronto.
+                        We specialize in comprehensive digital solutions including brand strategy, web and mobile app development, UI/UX design, Shopify e-commerce, and digital marketing. Our approach combines creative excellence with technical expertise to build products that users love and businesses rely on.
                       </p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                       <h2 className="mb-4">Who We Are</h2>
                       <p className="mb-0 fs-5">
-                        Since the establishment of Dev Aspire, we have successfully served hundreds of customers around the globe. The primary skills are related to web development and web design. We have a team of professionals that know how to manage different types of tasks.
+                        Since our establishment, we've successfully served over 30 clients across Pakistan (Islamabad, Karachi, Lahore) and internationally, completing 40+ projects ranging from simple websites to complex SaaS applications. Our diverse portfolio spans industries including e-commerce, education, healthcare, finance, and technology startups.
+                      </p>
+                      <p className="mb-0 fs-5 mt-4">
+                        Our team brings together expertise in modern technologies like React, Next.js, Node.js, React Native, and cutting-edge design tools like Figma. We stay ahead of trends through continuous learning and regularly update our skills to deliver solutions using the latest, most reliable technologies.
                       </p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                       <h2 className="mb-4">Our Mission</h2>
                       <p className="mb-0 fs-5">
-                        We have a single mission in mind of finding a way that how our customers can benefit from our services. Once we receive the project requirements, we will send the detailers that will be checked and followed up with the mockups design. After the final implementation of the project, our experts will check the project to assure that there is no room for error.
+                        Our mission is to empower businesses across Pakistan and globally with exceptional digital products that drive growth. We believe every business, regardless of size, deserves access to world-class design and development that helps them compete in the digital age.
+                      </p>
+                      <p className="mb-0 fs-5 mt-4">
+                        We're committed to transparency, quality, and long-term partnerships. From the first consultation to post-launch support, we work collaboratively with our clients, keeping them informed at every stage and ensuring the final product exceeds expectations.
                       </p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                      <h2 className="mb-4">Why Us</h2>
-                      <p className="mb-0 fs-5">
-                        Dev Aspire is the best Pakistan based web development and web design company. We have a large portfolio that you can check before you hire our services. In order to assure that we will provide our customers with the best web development services, we train our experts on the regular basis. We focus on upgrading our knowledge because that is the only way we can meet the latest requirements of our customers.
-                      </p>
-
+                      <h2 className="mb-4">Why Choose Dev Aspire</h2>
                       <div className="mt-6">
                         <ul className="list-unstyled d-flex flex-column gap-4">
                           <li className="d-flex gap-3">
                             <iconify-icon icon="lucide:check" className="fs-5 text-primary mt-1"></iconify-icon>
-                            <p className="mb-0 fs-5">All you have to do is let us know that services that you want and our experts will assure to convert all the dreams into reality.</p>
+                            <div>
+                              <h5 className="mb-2">Pakistani Market Expertise</h5>
+                              <p className="mb-0 fs-5">Based in Islamabad, we understand the Pakistani market, cultural nuances, and business landscape across major cities like Karachi, Lahore, and Rawalpindi.</p>
+                            </div>
                           </li>
                           <li className="d-flex gap-3">
                             <iconify-icon icon="lucide:check" className="fs-5 text-primary mt-1"></iconify-icon>
-                            <p className="mb-0 fs-5">The biggest attraction of our services is that we have the best packages that will allow you to select the one that meets your requirements.</p>
+                            <div>
+                              <h5 className="mb-2">Modern Technology Stack</h5>
+                              <p className="mb-0 fs-5">We build with React, Next.js, Node.js, React Native, and other modern technologies that ensure your product is fast, secure, scalable, and future-proof.</p>
+                            </div>
                           </li>
                           <li className="d-flex gap-3">
                             <iconify-icon icon="lucide:check" className="fs-5 text-primary mt-1"></iconify-icon>
-                            <p className="mb-0 fs-5">If you want you can order the customized services.</p>
+                            <div>
+                              <h5 className="mb-2">Transparent Pricing & Process</h5>
+                              <p className="mb-0 fs-5">No hidden costs or surprises. We provide detailed proposals with clear timelines, milestones, and pricing so you know exactly what to expect.</p>
+                            </div>
                           </li>
                           <li className="d-flex gap-3">
                             <iconify-icon icon="lucide:check" className="fs-5 text-primary mt-1"></iconify-icon>
-                            <p className="mb-0 fs-5">There are no hidden charges or services involved, which means that you will not have to worry about your budget or other services.</p>
+                            <div>
+                              <h5 className="mb-2">Proven Track Record</h5>
+                              <p className="mb-0 fs-5">With 40+ completed projects and clients across industries, we have the experience and portfolio to back our expertise. Check our case studies to see real results.</p>
+                            </div>
+                          </li>
+                          <li className="d-flex gap-3">
+                            <iconify-icon icon="lucide:check" className="fs-5 text-primary mt-1"></iconify-icon>
+                            <div>
+                              <h5 className="mb-2">Long-term Support</h5>
+                              <p className="mb-0 fs-5">We build lasting partnerships. Our relationship doesn't end at launch—we provide ongoing maintenance, support, and optimization to help your business grow.</p>
+                            </div>
+                          </li>
+                          <li className="d-flex gap-3">
+                            <iconify-icon icon="lucide:check" className="fs-5 text-primary mt-1"></iconify-icon>
+                            <div>
+                              <h5 className="mb-2">Quality-First Approach</h5>
+                              <p className="mb-0 fs-5">Every line of code is reviewed, every design is tested, and every detail is perfected. We never compromise on quality, regardless of project size or budget.</p>
+                            </div>
                           </li>
                         </ul>
                       </div>
-
-                      <p className="mb-0 fs-5 mt-6">
-                        We are providing all our clients with a complete package so that they will not have visit any other service provider. There are special consultation services available that will allow you to know more about our services.
-                      </p>
-
-                      <p className="mb-0 fs-5 mt-4">
-                        We have years of experience of working in this field. Dev Aspire has worked for different business organizations and we have the talent of developing a website for any platform, organization or ecommerce store. We have the knowledge related to all types of codes and languages that makes us better than our competitors.
-                      </p>
-
-                      <p className="mb-0 fs-5 mt-4">
-                        We have the best reviews from our previous customers and this is the reason we enjoy a positive reputation in the market. Dev Aspire gain the trust of our client by providing the best services so you will come back for more. If you want to know about our services you can visit our website.
-                      </p>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Company Timeline */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <h2 className="mb-0 text-center" data-aos="fade-up">
+                Our <em className="font-instrument">Journey</em>
+              </h2>
+              <div className="row">
+                {[
+                  { year: '2015', title: 'Founded', desc: 'Dev Aspire established in Islamabad, Pakistan with a vision to help businesses succeed online.' },
+                  { year: '2017', title: 'Team Expansion', desc: 'Grew our team to 5+ talented designers and developers, expanding service offerings.' },
+                  { year: '2019', title: 'International Clients', desc: 'Started serving international clients across North America and Europe.' },
+                  { year: '2021', title: '25+ Projects', desc: 'Milestone of 25 completed projects across diverse industries in Pakistan.' },
+                  { year: '2023', title: 'Technology Leadership', desc: 'Adopted modern stack: React, Next.js, React Native for cutting-edge solutions.' },
+                  { year: '2026', title: 'Continued Growth', desc: '40+ projects completed, serving businesses across Pakistan and globally.' },
+                ].map((milestone, idx) => (
+                  <div key={idx} className="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
+                    <div className="card h-100">
+                      <div className="card-body d-flex flex-column gap-3">
+                        <h3 className="mb-0 text-primary">{milestone.year}</h3>
+                        <h4 className="mb-0">{milestone.title}</h4>
+                        <p className="mb-0">{milestone.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
