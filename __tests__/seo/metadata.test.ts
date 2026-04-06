@@ -15,6 +15,11 @@ import { metadata as contactMetadata } from '@/app/contact/page';
 import { metadata as privacyMetadata } from '@/app/privacy-policy/page';
 import { metadata as termsMetadata } from '@/app/terms-and-conditions/page';
 import { metadata as getStartedMetadata } from '@/app/empty-page/page';
+import { metadata as brandStrategyMetadata } from '@/app/services/brand-strategy/page';
+import { metadata as digitalMarketingMetadata } from '@/app/services/digital-marketing/page';
+import { metadata as uiUxMetadata } from '@/app/services/ui-ux-design/page';
+import { metadata as shopifyMetadata } from '@/app/services/shopify-development/page';
+import { metadata as webAppMetadata } from '@/app/services/web-app-development/page';
 
 const SITE_URL = 'https://devaspire.co';
 const BRAND_NAME = 'Dev Aspire';
@@ -27,6 +32,20 @@ const pages = [
   { name: 'Privacy Policy', metadata: privacyMetadata, path: '/privacy-policy' },
   { name: 'Terms & Conditions', metadata: termsMetadata, path: '/terms-and-conditions' },
   { name: 'Get Started', metadata: getStartedMetadata, path: '/empty-page' },
+  { name: 'Brand Strategy', metadata: brandStrategyMetadata, path: '/services/brand-strategy' },
+  { name: 'Digital Marketing', metadata: digitalMarketingMetadata, path: '/services/digital-marketing' },
+  { name: 'UI/UX Design', metadata: uiUxMetadata, path: '/services/ui-ux-design' },
+  { name: 'Shopify Development', metadata: shopifyMetadata, path: '/services/shopify-development' },
+  { name: 'Web & App Development', metadata: webAppMetadata, path: '/services/web-app-development' },
+];
+
+// Service pages specifically for Pakistan keyword tests
+const servicePages = [
+  { name: 'Brand Strategy', metadata: brandStrategyMetadata },
+  { name: 'Digital Marketing', metadata: digitalMarketingMetadata },
+  { name: 'UI/UX Design', metadata: uiUxMetadata },
+  { name: 'Shopify Development', metadata: shopifyMetadata },
+  { name: 'Web & App Development', metadata: webAppMetadata },
 ];
 
 describe('SEO Metadata - Title Tags', () => {
@@ -42,11 +61,10 @@ describe('SEO Metadata - Title Tags', () => {
     expect(title).toContain(BRAND_NAME);
   });
 
-  test.each(pages)('$name page title should be between 30-60 characters', ({ metadata }) => {
+  test.each(pages)('$name page title should be between 30-70 characters', ({ metadata }) => {
     const title = typeof metadata.title === 'string'
       ? metadata.title
       : (metadata.title as any)?.default || '';
-    // Titles should ideally be 30-60 chars for optimal SEO
     expect(title.length).toBeGreaterThanOrEqual(20);
     expect(title.length).toBeLessThanOrEqual(70);
   });
@@ -58,16 +76,14 @@ describe('SEO Metadata - Meta Descriptions', () => {
     expect(metadata.description).toBeTruthy();
   });
 
-  test.each(pages)('$name page description should be between 120-160 characters', ({ metadata }) => {
+  test.each(pages)('$name page description should be between 80-165 characters', ({ metadata }) => {
     const desc = metadata.description as string;
-    // Meta descriptions should be 120-160 chars for optimal display in SERPs
     expect(desc.length).toBeGreaterThanOrEqual(80);
     expect(desc.length).toBeLessThanOrEqual(165);
   });
 
   test('Home page description should contain primary keywords', () => {
     const desc = (rootMetadata.description as string).toLowerCase();
-    // Should contain key terms related to web design/development agency
     const hasKeyword = ['web design', 'web development', 'agency', 'brand', 'design'].some(
       keyword => desc.includes(keyword)
     );
@@ -80,6 +96,11 @@ describe('SEO Metadata - Meta Descriptions', () => {
       keyword => desc.includes(keyword)
     );
     expect(hasKeyword).toBe(true);
+  });
+
+  test.each(servicePages)('$name service page description should mention "Pakistan"', ({ metadata }) => {
+    const desc = (metadata.description as string).toLowerCase();
+    expect(desc).toContain('pakistan');
   });
 });
 
@@ -155,6 +176,12 @@ describe('SEO Metadata - Additional Tags', () => {
     expect((rootMetadata as any).keywords).toBeDefined();
     const keywords = (rootMetadata as any).keywords;
     expect(Array.isArray(keywords) ? keywords.length : keywords.split(',').length).toBeGreaterThan(3);
+  });
+
+  test('Root layout keywords should target Pakistan', () => {
+    const keywords = (rootMetadata as any).keywords as string[];
+    const pakistanKeywords = keywords.filter((k: string) => k.toLowerCase().includes('pakistan'));
+    expect(pakistanKeywords.length).toBeGreaterThanOrEqual(5);
   });
 
   test('Root layout should have robots configuration', () => {

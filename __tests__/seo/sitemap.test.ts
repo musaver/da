@@ -55,10 +55,30 @@ describe('SEO - Sitemap', () => {
     expect(homeEntry.priority).toBe(1.0);
   });
 
+  test('service pages should have high priority (0.9)', () => {
+    const serviceUrls = [
+      '/services/brand-strategy',
+      '/services/digital-marketing',
+      '/services/ui-ux-design',
+      '/services/shopify-development',
+      '/services/web-app-development',
+    ];
+    serviceUrls.forEach(path => {
+      const entry = sitemapEntries.find(e => e.url === `${SITE_URL}${path}`);
+      expect(entry).toBeDefined();
+      expect(entry.priority).toBe(0.9);
+    });
+  });
+
   const requiredPages = [
     '/',
     '/about-us',
     '/contact',
+    '/services/brand-strategy',
+    '/services/digital-marketing',
+    '/services/ui-ux-design',
+    '/services/shopify-development',
+    '/services/web-app-development',
     '/privacy-policy',
     '/terms-and-conditions',
     '/empty-page',
@@ -68,5 +88,9 @@ describe('SEO - Sitemap', () => {
     const expectedUrl = path === '/' ? SITE_URL : `${SITE_URL}${path}`;
     const entry = sitemapEntries.find(e => e.url === expectedUrl);
     expect(entry).toBeDefined();
+  });
+
+  test('sitemap should have at least 11 entries', () => {
+    expect(sitemapEntries.length).toBeGreaterThanOrEqual(11);
   });
 });

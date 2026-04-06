@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import TeamMemberCard from '@/components/TeamMemberCard';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -181,44 +182,54 @@ export default function Home() {
               <div className="d-flex flex-column gap-4">
                 <div className="row">
                   <div className="col-sm-6 col-md-4 col-lg">
-                    <div className="card bg-secondary-subtle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                      <div className="card-body d-flex flex-column gap-11">
-                        <iconify-icon icon="solar:palette-round-linear" className="fs-9 text-secondary"></iconify-icon>
-                        <h4 className="text-secondary mb-0">Brand<br /> Strategy</h4>
+                    <Link href="/services/brand-strategy" className="text-decoration-none">
+                      <div className="card bg-secondary-subtle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div className="card-body d-flex flex-column gap-11">
+                          <iconify-icon icon="solar:palette-round-linear" className="fs-9 text-secondary"></iconify-icon>
+                          <h4 className="text-secondary mb-0">Brand<br /> Strategy</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                   <div className="col-sm-6 col-md-4 col-lg">
-                    <div className="card bg-info-subtle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                      <div className="card-body d-flex flex-column gap-11">
-                        <iconify-icon icon="solar:gallery-wide-linear" className="fs-9 text-info"></iconify-icon>
-                        <h4 className="text-info mb-0">Digital<br />Marketing</h4>
+                    <Link href="/services/digital-marketing" className="text-decoration-none">
+                      <div className="card bg-info-subtle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <div className="card-body d-flex flex-column gap-11">
+                          <iconify-icon icon="solar:gallery-wide-linear" className="fs-9 text-info"></iconify-icon>
+                          <h4 className="text-info mb-0">Digital<br />Marketing</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                   <div className="col-sm-6 col-md-4 col-lg">
-                    <div className="card bg-light-orange" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                      <div className="card-body d-flex flex-column gap-11">
-                        <iconify-icon icon="solar:magic-stick-3-linear" className="fs-9 text-orange"></iconify-icon>
-                        <h4 className="text-orange mb-0">UI/UX<br />Design</h4>
+                    <Link href="/services/ui-ux-design" className="text-decoration-none">
+                      <div className="card bg-light-orange" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <div className="card-body d-flex flex-column gap-11">
+                          <iconify-icon icon="solar:magic-stick-3-linear" className="fs-9 text-orange"></iconify-icon>
+                          <h4 className="text-orange mb-0">UI/UX<br />Design</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                   <div className="col-sm-6 col-md-4 col-lg">
-                    <div className="card bg-success-subtle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                      <div className="card-body d-flex flex-column gap-11">
-                        <iconify-icon icon="solar:chart-linear" className="fs-9 text-success"></iconify-icon>
-                        <h4 className="text-success mb-0">Shopify Custom<br />App Development</h4>
+                    <Link href="/services/shopify-development" className="text-decoration-none">
+                      <div className="card bg-success-subtle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <div className="card-body d-flex flex-column gap-11">
+                          <iconify-icon icon="solar:chart-linear" className="fs-9 text-success"></iconify-icon>
+                          <h4 className="text-success mb-0">Shopify Custom<br />App Development</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                   <div className="col-sm-6 col-md-4 col-lg">
-                    <div className="card bg-danger-subtle" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                      <div className="card-body d-flex flex-column gap-11">
-                        <iconify-icon icon="solar:window-frame-linear" className="fs-9 text-danger"></iconify-icon>
-                        <h4 className="text-danger mb-0">Web & App<br />Development</h4>
+                    <Link href="/services/web-app-development" className="text-decoration-none">
+                      <div className="card bg-danger-subtle" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <div className="card-body d-flex flex-column gap-11">
+                          <iconify-icon icon="solar:window-frame-linear" className="fs-9 text-danger"></iconify-icon>
+                          <h4 className="text-danger mb-0">Web & App<br />Development</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="card bg-dark mb-0">
@@ -534,6 +545,113 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Why Choose Dev Aspire Section */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light" id="why-us">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <div className="row justify-content-center">
+                <div className="col-lg-8 col-xl-6">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Why Pakistani Businesses Choose <em className="font-instrument">Dev Aspire</em>
+                  </h2>
+                </div>
+              </div>
+              <div className="row">
+                {[
+                  { icon: 'solar:shield-check-linear', title: 'Trusted by 40+ Businesses', desc: 'From Islamabad to Karachi, startups and established companies trust Dev Aspire for reliable, high-quality web design and development services across Pakistan.' },
+                  { icon: 'solar:clock-circle-linear', title: 'On-Time Project Delivery', desc: 'We follow agile methodology with clear milestones, ensuring your website or app is delivered on time and within budget every single time.' },
+                  { icon: 'solar:hand-money-linear', title: 'Affordable Pricing for Pakistan', desc: 'Get world-class web design and development at competitive rates tailored for the Pakistani market. No hidden charges, transparent pricing from day one.' },
+                  { icon: 'solar:code-square-linear', title: 'Modern Tech Stack', desc: 'We build with React, Next.js, Node.js, and other cutting-edge technologies that ensure your website is fast, secure, and future-proof.' },
+                  { icon: 'solar:headphones-round-sound-linear', title: 'Dedicated Support & Maintenance', desc: 'Our relationship doesn\'t end at launch. We provide ongoing website maintenance, SEO updates, and technical support to keep your business growing online.' },
+                  { icon: 'solar:global-linear', title: 'Local Expertise, Global Standards', desc: 'Based in Islamabad, we understand the Pakistani market while delivering designs and code that meet international quality standards.' },
+                ].map((item, idx) => (
+                  <div key={idx} className="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">
+                    <div className="card h-100">
+                      <div className="card-body d-flex flex-column gap-3">
+                        <iconify-icon icon={item.icon} className="fs-9 text-primary"></iconify-icon>
+                        <h3 className="mb-0">{item.title}</h3>
+                        <p className="mb-0">{item.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Industries We Serve Section */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <div className="row justify-content-center">
+                <div className="col-lg-8 col-xl-6">
+                  <h2 className="mb-0 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Industries We <em className="font-instrument">Serve</em> in Pakistan
+                  </h2>
+                  <p className="text-center mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Dev Aspire has delivered web design, development, and digital marketing solutions across diverse industries in Pakistan and internationally.
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                {[
+                  { icon: 'solar:cart-large-2-linear', title: 'E-Commerce & Retail', color: 'success' },
+                  { icon: 'solar:diploma-linear', title: 'Education & EdTech', color: 'info' },
+                  { icon: 'solar:heart-pulse-linear', title: 'Healthcare & Wellness', color: 'danger' },
+                  { icon: 'solar:buildings-3-linear', title: 'Real Estate & Property', color: 'orange' },
+                  { icon: 'solar:wallet-money-linear', title: 'Finance & FinTech', color: 'primary' },
+                  { icon: 'solar:hamburger-linear', title: 'Food & Restaurant', color: 'secondary' },
+                  { icon: 'solar:suitcase-linear', title: 'Travel & Hospitality', color: 'info' },
+                  { icon: 'solar:rocket-2-linear', title: 'Startups & SaaS', color: 'danger' },
+                ].map((industry, idx) => (
+                  <div key={idx} className="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 50} data-aos-duration="1000">
+                    <div className={`card bg-${industry.color}-subtle h-100 text-center`}>
+                      <div className="card-body d-flex flex-column align-items-center gap-3 py-5">
+                        <iconify-icon icon={industry.icon} className={`fs-8 text-${industry.color}`}></iconify-icon>
+                        <h4 className={`mb-0 text-${industry.color}`}>{industry.title}</h4>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* How We Work Section */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-dark" id="process">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <div className="row justify-content-center">
+                <div className="col-lg-8 col-xl-6">
+                  <h2 className="mb-0 text-center text-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    Our Proven <em className="font-instrument">Process</em>
+                  </h2>
+                </div>
+              </div>
+              <div className="row">
+                {[
+                  { step: '01', title: 'Discovery & Strategy', desc: 'We start with understanding your business goals, target audience, and competitive landscape in the Pakistani market.' },
+                  { step: '02', title: 'Design & Prototype', desc: 'Our designers create wireframes and interactive prototypes in Figma that bring your vision to life before development begins.' },
+                  { step: '03', title: 'Development & Testing', desc: 'Agile development with regular sprints, thorough code reviews, and comprehensive testing to ensure quality at every stage.' },
+                  { step: '04', title: 'Launch & Growth', desc: 'We deploy your project, set up analytics, and provide ongoing SEO optimization and support to help your business grow.' },
+                ].map((item, idx) => (
+                  <div key={idx} className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">
+                    <div className="card bg-white bg-opacity-10 h-100 border-0">
+                      <div className="card-body d-flex flex-column gap-3">
+                        <span className="fs-11 fw-bold text-warning opacity-50">{item.step}</span>
+                        <h3 className="mb-0 text-white">{item.title}</h3>
+                        <p className="mb-0 text-white text-opacity-75">{item.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Get in Touch Section */}
         <section className="py-10 py-lg-12 py-xl-13">
           <div className="container">
@@ -547,11 +665,11 @@ export default function Home() {
                       <p className="text-dark mb-0 text-center">Looking to elevate your brand? We craft immersive experiences
                         that captivate, engage, and make your business unforgettable in every interaction.</p>
                     </div>
-                    <a href="/contact" className="btn btn-dark mx-auto">
+                    <Link href="/contact" className="btn btn-dark mx-auto">
                       <span className="btn-text">Let&apos;s Collaborate</span>
                       <iconify-icon icon="solar:arrow-right-up-linear"
                         className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
-          </a>
+                    </Link>
         </div>
                 </div>
               </div>
