@@ -1,0 +1,150 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
+import Link from 'next/link';
+import { serviceSchema, breadcrumbSchema } from '@/lib/structured-data';
+import { SITE_URL } from '@/lib/site';
+
+export const metadata = {
+  title: "Digital Marketing Services in Pakistan - Dev Aspire",
+  description:
+    "Results-driven digital marketing services in Pakistan by Dev Aspire. SEO, social media marketing, PPC, and content marketing to grow your business.",
+  openGraph: {
+    type: "website" as const,
+    url: `${SITE_URL}/services/digital-marketing`,
+    siteName: "Dev Aspire",
+    title: "Digital Marketing Services in Pakistan - Dev Aspire",
+    description:
+      "Results-driven digital marketing services in Pakistan by Dev Aspire. SEO, social media marketing, PPC advertising, and content marketing to grow your business.",
+    images: [{ url: `${SITE_URL}/assets/images/logos/logo-dark.svg`, width: 1200, height: 630, alt: "Digital Marketing Services - Dev Aspire Pakistan" }],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Digital Marketing Services in Pakistan - Dev Aspire",
+    description: "Results-driven digital marketing in Pakistan. SEO, social media, PPC, and content marketing services by Dev Aspire to grow your business online.",
+    images: [`${SITE_URL}/assets/images/logos/logo-dark.svg`],
+  },
+  alternates: { canonical: `${SITE_URL}/services/digital-marketing` },
+};
+
+const schema = serviceSchema(
+  'Digital Marketing Services',
+  'Comprehensive digital marketing services including SEO, social media marketing, Google Ads PPC campaigns, content marketing, and email marketing for businesses in Pakistan.'
+);
+const breadcrumb = breadcrumbSchema('Digital Marketing', '/services/digital-marketing');
+
+export default function DigitalMarketing() {
+  return (
+    <>
+      <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+
+      <div className="page-wrapper overflow-hidden">
+        <section className="banner-section bg-gradient-shaph position-relative pt-14 pt-md-15 pb-11 pb-lg-12 pb-xl-13">
+          <div className="container position-relative z-3">
+            <div className="d-flex flex-column gap-10">
+              <h1 className="text-center mb-0" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                Digital Marketing Services in <em className="font-instrument fw-normal">Pakistan</em>
+              </h1>
+              <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div className="col-xl-7">
+                  <p className="text-center mb-0">
+                    Grow your business with data-driven digital marketing strategies. Dev Aspire offers comprehensive SEO, social media marketing,
+                    PPC advertising, and content marketing services tailored for the Pakistani market.
+                  </p>
+                </div>
+              </div>
+              <div className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <Link href="/contact" className="btn btn-primary py-md-7 pe-md-14">
+                  <span className="btn-text">Get a Free Marketing Audit</span>
+                  <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="d-flex flex-column gap-10 gap-lg-12">
+              <h2 className="mb-0 text-center" data-aos="fade-up">
+                Our Digital Marketing <em className="font-instrument">Services</em>
+              </h2>
+              <div className="row">
+                {[
+                  { title: 'Search Engine Optimization (SEO)', desc: 'Dominate Google search results in Pakistan with our proven SEO strategies. We handle on-page optimization, technical SEO, link building, and local SEO to drive organic traffic to your website.', color: 'info', icon: 'solar:magnifer-linear' },
+                  { title: 'Social Media Marketing', desc: 'Build a strong social media presence across Facebook, Instagram, LinkedIn, and TikTok. Our social media strategies engage Pakistani audiences and convert followers into loyal customers.', color: 'secondary', icon: 'solar:share-circle-linear' },
+                  { title: 'PPC & Google Ads Management', desc: 'Maximize your ROI with targeted pay-per-click campaigns. We manage Google Ads and social media ad campaigns optimized for the Pakistani market and beyond.', color: 'orange', icon: 'solar:target-linear' },
+                  { title: 'Content Marketing & Copywriting', desc: 'Engage your audience with SEO-optimized content. From blog posts and articles to email newsletters, we create content that ranks on Google and resonates with Pakistani consumers.', color: 'success', icon: 'solar:pen-new-round-linear' },
+                  { title: 'Email Marketing & Automation', desc: 'Nurture leads and drive repeat business with automated email campaigns, drip sequences, and personalized email marketing strategies designed for high conversion.', color: 'danger', icon: 'solar:letter-linear' },
+                  { title: 'Analytics & Performance Reporting', desc: 'Track every click, conversion, and rupee spent. We provide detailed monthly analytics reports so you can see exactly how your digital marketing investment is performing.', color: 'primary', icon: 'solar:graph-new-linear' },
+                ].map((service, idx) => (
+                  <div key={idx} className="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100} data-aos-duration="1000">
+                    <div className={`card bg-${service.color}-subtle h-100`}>
+                      <div className="card-body d-flex flex-column gap-4">
+                        <iconify-icon icon={service.icon} className={`fs-9 text-${service.color}`}></iconify-icon>
+                        <h3 className={`text-${service.color} mb-0`}>{service.title}</h3>
+                        <p className="mb-0">{service.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Digital Marketing Matters */}
+        <section className="py-10 py-lg-12 py-xl-13 bg-light">
+          <div className="container">
+            <div className="d-flex flex-column gap-10">
+              <h2 className="mb-0 text-center" data-aos="fade-up">
+                Why Digital Marketing Matters for <em className="font-instrument">Pakistani Businesses</em>
+              </h2>
+              <div className="row">
+                {[
+                  { stat: '80M+', label: 'Internet users in Pakistan actively searching for products and services online' },
+                  { stat: '71%', label: 'Of consumers research online before making a purchase decision in Pakistan' },
+                  { stat: '5x', label: 'Higher ROI from digital marketing compared to traditional advertising methods' },
+                ].map((item, idx) => (
+                  <div key={idx} className="col-md-4 mb-4" data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
+                    <div className="card h-100 text-center">
+                      <div className="card-body d-flex flex-column gap-3">
+                        <h2 className="mb-0 text-primary">{item.stat}</h2>
+                        <p className="mb-0">{item.label}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-10 py-lg-12 py-xl-13">
+          <div className="container">
+            <div className="get-in-touch position-relative overflow-hidden rounded-3 border px-4 py-5 py-lg-13 py-xl-14">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div className="d-flex flex-column gap-7 text-center">
+                    <h2 className="mb-0">Ready to Grow Your Business <em className="font-instrument">Online?</em></h2>
+                    <p className="mb-0">Get a free digital marketing consultation and discover how Dev Aspire can help your business rank higher and convert more customers in Pakistan.</p>
+                    <Link href="/contact" className="btn btn-dark mx-auto">
+                      <span className="btn-text">Get Your Free Audit</span>
+                      <iconify-icon icon="solar:arrow-right-up-linear" className="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <Footer />
+      <ScrollToTop />
+    </>
+  );
+}

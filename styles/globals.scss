@@ -1,0 +1,26 @@
+// Override font family variables before importing Bootstrap
+$font-family-sans-serif: var(--font-inter-tight), "Inter Tight", sans-serif !default;
+
+@import "../public/assets/scss/variables/variables";
+
+// Import Bootstrap source files (Required file)
+@import "../public/assets/libs/bootstrap/scss/bootstrap.scss";
+
+// Theme Layouts style (Required file)
+@import "../public/assets/scss/layouts/header";
+
+// Pages style (Required file)
+@import "../public/assets/scss/pages/index";
+
+// Component style (Required file)
+@import "../public/assets/scss/component/reboot";
+
+// Utilities style (Required file)
+@import "../public/assets/scss/utilities/icon-size";
+@import "../public/assets/scss/utilities/override";
+
+// Override font-instrument class to use CSS variable
+.font-instrument {
+    font-family: var(--font-instrument-serif), "Instrument Serif", serif !important;
+}
+
