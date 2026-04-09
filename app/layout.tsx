@@ -128,6 +128,20 @@ export default function RootLayout({
         <FloatingContact />
         <ClientScripts />
         
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NFBNFXFM7T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NFBNFXFM7T');
+          `}
+        </Script>
+
         {/* Scripts */}
         <Script src="/assets/libs/jquery/dist/jquery.min.js" strategy="beforeInteractive" />
         <Script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
