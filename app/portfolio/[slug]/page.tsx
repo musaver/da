@@ -8,7 +8,7 @@ import { caseStudies, type CaseStudy } from '@/data/case-studies';
 import { notFound } from 'next/navigation';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -18,7 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const project = caseStudies.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const project = caseStudies.find((p) => p.slug === slug);
 
   if (!project) {
     return {};
@@ -54,8 +55,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function CaseStudyPage({ params }: Props) {
-  const project = caseStudies.find((p) => p.slug === params.slug);
+export default async function CaseStudyPage({ params }: Props) {
+  const { slug } = await params;
+  const project = caseStudies.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();

@@ -8,7 +8,7 @@ import { blogPosts, type BlogPost } from '@/data/blog-posts';
 import { notFound } from 'next/navigation';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -18,7 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
     return {};
@@ -58,8 +59,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function BlogPost({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+export default async function BlogPost({ params }: Props) {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
