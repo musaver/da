@@ -97,12 +97,10 @@ export default function Home() {
                   {[
                     { src: '/assets/images/client-logos/logo-1.png', alt: 'Client Logo 1', text: '' },
                     { src: '/assets/images/client-logos/logo-3.webp', alt: 'Client Logo 3', text: '' },
-                    { src: '/assets/images/client-logos/logo-4.webp', alt: 'School of Islam', text: '' },
                     { src: '/assets/images/client-logos/logo-5.png', alt: 'Lets Enjoy', text: '' },
                     { src: '/assets/images/client-logos/logo-6.png', alt: 'Client Logo 6', text: '' },
                     { src: '/assets/images/client-logos/logo-1.png', alt: 'Client Logo 1', text: '' },
                     { src: '/assets/images/client-logos/logo-3.webp', alt: 'Client Logo 3', text: '' },
-                    { src: '/assets/images/client-logos/logo-4.webp', alt: 'School of Islam', text: '' },
                     { src: '/assets/images/client-logos/logo-5.png', alt: 'Lets Enjoy', text: '' },
                     { src: '/assets/images/client-logos/logo-6.png', alt: 'Client Logo 6', text: '' }
                   ].map((logo, idx) => (
@@ -274,7 +272,6 @@ export default function Home() {
                 {[
                   { img: 1, title: 'DealGuru', url: 'https://dealguru.se/', tags: ['UX Research', 'Interface Design'] },
                   { img: 2, title: 'Hisaab360', url: 'https://hisaab360.com/', tags: ['Product Design', 'Interaction Design'] },
-                  { img: 3, title: 'Schoolofislam', url: 'https://schoolofislam.net/', tags: ['Brand identity design', 'UX Research'] },
                   { img: 4, title: 'Gaga Nest', url: 'https://gaganest.com/', tags: ['Visual Storytelling', 'Web & Mobile Design'] }
                 ].map((work, idx) => (
                   <div key={idx} className="col-md-6 mb-10">
