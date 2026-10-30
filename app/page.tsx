@@ -432,10 +432,10 @@ export default function Home() {
                           <div className="d-flex flex-column gap-5">
                             <div className="d-flex flex-column gap-7">
                               <span className="badge text-bg-dark fs-4 w-fit">Starter Package</span>
-                              <p className="mb-0 text-black">Perfect for small businesses and startups. Professional web design with responsive layout, SEO optimization, and modern features. Cost-effective solution starting at just PKR 350,000.</p>
+                              <p className="mb-0 text-black">Perfect for small businesses and startups. Professional web design with responsive layout, SEO optimization, and modern features. Cost-effective solution starting at just PKR 100,000.</p>
                             </div>
                             <div className="d-flex flex-column gap-7">
-                              <h2 className="mb-0 fs-9">PKR 350,000</h2>
+                              <h2 className="mb-0 fs-9">PKR 100,000</h2>
                               <a href="/contact" className="btn btn-white">
                                 <span className="btn-text">Let&apos;s Collaborate</span>
                                 <iconify-icon icon="solar:arrow-right-up-linear"
@@ -472,7 +472,7 @@ export default function Home() {
                               <p className="mb-0 text-white">Complete mobile app development (iOS & Android) + advanced web application. Perfect for e-commerce businesses, SaaS startups, and scaling enterprises. Includes payment gateway integration and cloud deployment.</p>
                             </div>
                             <div className="d-flex flex-column gap-7">
-                              <h2 className="mb-0 text-white fs-9">PKR 700,000+</h2>
+                              <h2 className="mb-0 text-white fs-9">PKR 200,000</h2>
                               <a href="/contact" className="btn btn-white">
                                 <span className="btn-text">Let&apos;s Collaborate</span>
                                 <iconify-icon icon="solar:arrow-right-up-linear"
