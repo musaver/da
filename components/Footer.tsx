@@ -25,6 +25,10 @@ export default function Footer() {
                     <iconify-icon icon="solar:phone-linear" className="me-2"></iconify-icon>
                     +92 300 6825223
                   </a>
+                  <a className="link-hover text-body" href="tel:+923035559672">
+                    <iconify-icon icon="solar:phone-linear" className="me-2"></iconify-icon>
+                    +92 303 555 9672
+                  </a>
                   <a className="link-hover text-body" href="mailto:hello@devaspire.com">
                     <iconify-icon icon="solar:letter-linear" className="me-2"></iconify-icon>
                     hello@devaspire.com
